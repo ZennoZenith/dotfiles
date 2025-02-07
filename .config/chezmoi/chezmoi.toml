@@ -1,0 +1,14 @@
+sourceDir = "~/dotfiles"
+
+encryption = "age"
+[age]
+    identity = "~/.config/chezmoi/key.txt"
+    recipient = "age1crjjt7k2yr4tdr0aegf64d0v9emp2zg6lttx5dt3exr6kqjr8fwqqqdgdy"
+
+# [git]
+#     autoPush = true
+#     autoCommit = true
+
+[data]
+    email = "ZennoZenith@proton.me"
+
