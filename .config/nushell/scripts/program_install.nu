@@ -172,6 +172,7 @@ let hyprland_yay = [
   hypridle
   hyprlock
   hyprpaper
+  hyprcursor
   walker-bin
   hyprshot # hyprland screen shot 
   grimblast # screenshot A Hyprland version of Grimshot
@@ -186,6 +187,8 @@ let hyprland_yay = [
   catppuccin-gtk-theme-mocha # <-
   spacedrive-bin
 ]
+
+let hyprland_cursor = "https://github.com/ndom91/rose-pine-hyprcursor"
 
 let hyprland_pacman = [
   xdg-desktop-portal-hyprland
