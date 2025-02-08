@@ -81,12 +81,17 @@ const ctrl_t =  {
 
 # Update the $env.config
 export-env {
-  if not ($env.__keybindings_loaded? | default false) {
-    $env.__keybindings_loaded = true
-    $env.config.keybindings = $env.config.keybindings | append [
-      $alt_c
-      $ctrl_h
-      $ctrl_t
-    ]
+  if ('fzf_dirs' not-in ($env.config.keybindings | get name) ) {
+    $env.config.keybindings = $env.config.keybindings | append $alt_c
   }
+
+  if ('history_menu' not-in ($env.config.keybindings | get name) ) {
+    $env.config.keybindings = $env.config.keybindings | append $ctrl_h
+  }
+
+  if ('fzf_files' not-in ($env.config.keybindings | get name) ) {
+    $env.config.keybindings = $env.config.keybindings | append $ctrl_t
+  }
+
+  $env.__keybindings_loaded = true
 }
