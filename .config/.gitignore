@@ -1,3 +1,5 @@
 btop/btop.log
 nushell/history*
 zellij/plugins
+helix/runtime
+fish/fish_variables
