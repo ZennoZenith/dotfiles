@@ -1,12 +1,8 @@
-const NU_LIB_DIRS = [
-    ($nu.config-path | path dirname | path join 'completions')
-    ($nu.data-dir | path join "nushell/completions")
-]
+const custom_compeltion_dir = ($nu.config-path | path dirname | path join 'completions')
+const compeltion_dir = ($nu.data-dir | path join "nushell/completions")
 
-# ($nu.config-path | path dirname | path join 'completions')
-source zellij-completions.nu
-source ssh-completions.nu
+source ($custom_compeltion_dir | path join 'zellij-completions.nu')
+source ($custom_compeltion_dir | path join 'ssh-completions.nu')
 
-# ($nu.data-dir | path join "nushell/completions")
-source pueue.nu
-source atuin.nu
+source ($compeltion_dir | path join 'pueue.nu')
+source ($compeltion_dir | path join 'atuin.nu')
