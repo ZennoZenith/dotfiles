@@ -18,37 +18,37 @@ let dnf_installs = [
 
 
 let brew_programs = [
-  gcc
-  bacon
-  watchexec
+  # gcc
+  # bacon
+  # watchexec
   # helix
-  nushell
-  fzf
-  zoxide
-  ripgrep
-  bat
-  zellij
-  lsd
-  fd
-  sd
-  lazygit
-  csvq
-  atuin
-  mprocs
-  sccache
-  fish # required for nushell completer
-  rsteube/tap/carapace # required for nushell completer
-  tlrc # command name is tldr
-  thefuck
-  csvlens
-  git-delta
-  golangci-lint
-  just
-  dprint
-  clipboard
-  marksman
-  gh
-  pyright # python lsp 
+  # nushell
+  # fzf
+  # zoxide
+  # ripgrep
+  # bat
+  # zellij
+  # lsd
+  # fd
+  # sd
+  # lazygit
+  # csvq
+  # atuin
+  # mprocs
+  # sccache
+  # fish # required for nushell completer
+  # rsteube/tap/carapace # required for nushell completer
+  # tlrc # command name is tldr
+  # thefuck
+  # csvlens
+  # git-delta
+  # golangci-lint
+  # just
+  # dprint
+  # clipboard
+  # marksman
+  # gh
+  # pyright # python lsp 
 ]
 
 # rustup component add
@@ -154,6 +154,8 @@ let yay = [
   yazi # (optional dependiecies) paru -S yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
   tree
   age
+  ouch # https://terminaltrove.com/ouch/
+  tealdeer # tldr in rust
 ]
 
 let autostart_commands = [
