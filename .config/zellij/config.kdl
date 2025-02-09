@@ -150,8 +150,8 @@ keybinds clear-defaults=true {
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt w" { ToggleFloatingPanes; }
-        bind "Alt f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-        bind "Alt z" { TogglePaneFrames; SwitchToMode "Normal"; }
+        bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt z" { TogglePaneFrames; }
         bind "Alt h" { MoveFocusOrTab "left"; }
         bind "Alt i" { MoveTab "left"; }
         bind "Alt j" { MoveFocus "down"; }
@@ -178,8 +178,8 @@ keybinds clear-defaults=true {
         bind "Ctrl g" { SwitchToMode "Locked"; }
         // bind "Ctrl q" { Quit; }
         bind "Alt w" { ToggleFloatingPanes; }
-        bind "Alt f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-        bind "Alt z" { TogglePaneFrames; SwitchToMode "Normal"; }
+        bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt z" { TogglePaneFrames; }
         bind "Alt n" { NewPane; }
         bind "Alt i" { MoveTab "Left"; }
         bind "Alt o" { MoveTab "Right"; }
