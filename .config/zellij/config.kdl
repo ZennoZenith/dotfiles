@@ -255,13 +255,13 @@ plugins {
     }
     configuration location="zellij:configuration"
     plugin-manager location="zellij:plugin-manager"
-    zjstatus location="file:~/.assets/zellij/plugins/zjstatus.wasm"
-    zjframes location="file:~/.assets/zellij/plugins/zjframes.wasm" { 
+    zjstatus location="file:~/assets/zellij/plugins/zjstatus.wasm"
+    zjframes location="file:~/assets/zellij/plugins/zjframes.wasm" { 
         hide_frame_for_single_pane       "false"
         hide_frame_except_for_search     "false"
         hide_frame_except_for_fullscreen "false"
     }
-    harpoon location="file:~/.assets/zellij/plugins/harpoon.wasm"
+    harpoon location="file:~/assets/zellij/plugins/harpoon.wasm"
 }
 
 // Plugins to load in the background when a new session starts

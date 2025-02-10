@@ -248,8 +248,8 @@ name = "mprocs"
 description = ""
 
 [packages.aur]
-package_name = "mprocs"
-bin_name = "mprocs-bin"
+package_name = "mprocs-bin"
+bin_name = "mprocs"
 
 ###########################################
 [[packages]]
@@ -257,8 +257,8 @@ name = "dprint"
 description = ""
 
 [packages.aur]
-package_name = "dprint"
-bin_name = "dprint-bin"
+package_name = "dprint-bin"
+bin_name = "dprint"
 
 ###########################################
 [[packages]]
@@ -561,6 +561,56 @@ bin_name = "hyprsunset"
 
 ###########################################
 [[packages]]
+name = "pipewire"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "pipewire"
+bin_name = "pipewire"
+
+###########################################
+[[packages]]
+name = "wireplumber"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "wireplumber"
+bin_name = "wireplumber"
+
+###########################################
+[[packages]]
+name = "pamixer"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "pamixer"
+bin_name = "pamixer"
+
+###########################################
+[[packages]]
+name = "pavucontrol"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "pavucontrol"
+bin_name = "pavucontrol"
+
+###########################################
+[[packages]]
+name = "brightnessctl"
+description = ""
+tags = ["hyprland", "brightness"]
+
+[packages.aur]
+package_name = "brightnessctl"
+bin_name = "brightnessctl"
+
+###########################################
+[[packages]]
 name = "nwg-look"
 description = "Theaming gtk apps"
 tags = ["gtk"]
@@ -570,20 +620,19 @@ package_name = "nwg-look"
 bin_name = "nwg-look"
 
 ###########################################
-[[packages]]
-name = "catppuccin-gtk-theme-mocha"
-description = ""
-tags = ["gtk"]
+# [[packages]]
+# name = "catppuccin-gtk-theme-mocha"
+# description = ""
+# tags = ["gtk"]
 
-[packages.aur]
-package_name = "catppuccin-gtk-theme-mocha"
-bin_name = "catppuccin-gtk-theme-mocha"
+# [packages.aur]
+# package_name = "catppuccin-gtk-theme-mocha"
+# bin_name = "catppuccin-gtk-theme-mocha"
 
 ###########################################
 [[packages]]
 name = "spacedrive"
 description = ""
-tags = ["hyprland"]
 
 [packages.aur]
 package_name = "spacedrive-bin"
@@ -608,7 +657,7 @@ languages = ["rust"]
 url = ["https://github.com/topgrade-rs/topgrade"]
 
 [packages.aur]
-package_name = "topgrade"
+package_name = "topgrade-bin"
 bin_name = "topgrade"
 
 ###########################################
@@ -763,37 +812,37 @@ package_name = "gping"
 bin_name = "gping"
 
 ###########################################
-[[packages]]
-name = "rofi"
-description = ""
-languages = ["rust"]
-url = [""]
+# [[packages]]
+# name = "superfile"
+# description = "Pretty fancy and modern terminal file manager"
+# languages = ["go"]
+# url = ["https://github.com/yorukot/superfile"]
 
-[packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
-
-###########################################
-[[packages]]
-name = "rofi"
-description = ""
-languages = ["rust"]
-url = [""]
-
-[packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+# [packages.aur]
+# package_name = "superfile-bin"
+# bin_name = ["spf", "superfile"]
 
 ###########################################
 [[packages]]
-name = "rofi"
+name = "swww"
 description = ""
-languages = ["rust"]
-url = [""]
+languages = []
+url = []
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "swww"
+bin_name = "swww"
+
+###########################################
+[[packages]]
+name = "jome"
+description = "An emoji picker desktop application"
+languages = ["c++"]
+url = ["https://github.com/eepp/jome?tab=readme-ov-file#install-on-arch-linux"]
+
+[packages.aur]
+package_name = "jome-git"
+bin_name = "jome"
 
 ###########################################
 [[packages]]

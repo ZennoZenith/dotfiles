@@ -166,36 +166,21 @@ let autostart_commands = [
 
 ]
 
-let hyprland_yay = [
-  rofi 
-  wofi
-  waybar
-  hyprpolkitagent 
-  hypridle
-  hyprlock
-  hyprpaper
-  hyprcursor
-  walker-bin
-  hyprshot # hyprland screen shot 
-  grimblast # screenshot A Hyprland version of Grimshot
-  wlogout
-  wl-clipboard # dependency for cliphist
-  cliphist # clipboard manager written in go (https://github.com/sentriz/cliphist)
-  watershot
-  discord
-  hyprpicker # hyprland color picker
-  hyprsunset
-  nwg-look # theming gtk apps 
-  catppuccin-gtk-theme-mocha # <-
-  spacedrive-bin
-]
-
 let hyprland_cursor = "https://github.com/ndom91/rose-pine-hyprcursor"
 
-let hyprland_pacman = [
-  xdg-desktop-portal-hyprland
-  swaync # notification deamon
-  # dunst # alternate notification deamon
-  pavucontrol # volume control
-  pamixer # volume control ^ both is reqired
+
+let nerd_fonts_aur = [
+  ttf-cascadia-code-nerd
+  ttf-cascadia-mono-nerd
+  ttf-fira-code
+  ttf-fira-mono
+  ttf-fira-sans
+  ttf-firacode-nerd
+  ttf-iosevka-nerd
+  ttf-iosevkaterm-nerd
+  ttf-jetbrains-mono-nerd
+  ttf-jetbrains-mono
+  ttf-nerd-fonts-symbols
+  ttf-nerd-fonts-symbols
+  ttf-nerd-fonts-symbols-mono
 ]
