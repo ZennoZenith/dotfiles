@@ -846,14 +846,15 @@ bin_name = "jome"
 
 ###########################################
 [[packages]]
-name = "rofi"
-description = ""
-languages = ["rust"]
-url = [""]
+name = "bibata-cursor-theme"
+description = "Open source, compact, and material designed cursor set."
+languages = []
+tags = ["cursor"]
+url = ["https://github.com/ful1e5/Bibata_Cursor"]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "bibata-cursor-theme-bin"
+bin_name = ["bibata-cursor-theme"]
 
 ###########################################
 [[packages]]
