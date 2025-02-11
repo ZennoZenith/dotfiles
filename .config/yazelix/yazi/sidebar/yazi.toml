@@ -2,6 +2,7 @@
 
 [manager]
 ratio = [0, 4, 0]
+show_hidden    = true # false
 
 [opener]
 # yazelix v4
