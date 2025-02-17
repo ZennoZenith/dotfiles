@@ -1,4 +1,4 @@
-#/usr/bin/nu
+#!/usr/bin/nu
 const swww_last_background_file = $'($nu.home-path)/.local/share/swww/swww-last-background'
 const background_images_dir = $'($nu.home-path)/assets/backgrounds'
 const transistion_effects = [ simple | fade | left | right | top | bottom | wipe | wave | grow | center ]
