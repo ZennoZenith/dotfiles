@@ -71,7 +71,7 @@ keybinds clear-defaults=true {
         bind "j" { Resize "Increase down"; }
         bind "k" { Resize "Increase up"; }
         bind "l" { Resize "Increase right"; }
-        bind "r" { SwitchToMode "normal"; }
+        bind "n" { SwitchToMode "normal"; }
     }
     move {
         bind "left" { MovePane "left"; }
@@ -203,7 +203,7 @@ keybinds clear-defaults=true {
         bind "esc" { SwitchToMode "locked"; }
     }
     shared_except "locked" "entersearch" "renametab" "renamepane" "move" {
-        bind "m" { SwitchToMode "move"; }
+        bind "h" { SwitchToMode "move"; }
     }
     shared_except "locked" "entersearch" "search" "renametab" "renamepane" "session" {
         bind "o" { SwitchToMode "session"; }
@@ -218,7 +218,7 @@ keybinds clear-defaults=true {
         bind "p" { SwitchToMode "pane"; }
     }
     shared_except "locked" "resize" "pane" "tab" "entersearch" "renametab" "renamepane" {
-        bind "r" { SwitchToMode "resize"; }
+        bind "n" { SwitchToMode "resize"; }
     }
     shared_among "scroll" "search" {
         bind "PageDown" { PageScrollDown; }
