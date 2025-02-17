@@ -1,0 +1,18 @@
+[Added Associations]
+application/json=dev.zed.Zed.desktop;
+application/pdf=brave-browser.desktop;libreoffice-draw.desktop;
+application/x-docbook+xml=dev.zed.Zed.desktop;
+application/x-yaml=dev.zed.Zed.desktop;
+text/markdown=dev.zed.Zed.desktop;
+text/plain=dev.zed.Zed.desktop;
+text/x-cmake=dev.zed.Zed.desktop;
+
+[Default Applications]
+application/json=dev.zed.Zed.desktop;
+application/pdf=brave-browser.desktop;
+application/x-docbook+xml=dev.zed.Zed.desktop;
+application/x-yaml=dev.zed.Zed.desktop;
+text/markdown=dev.zed.Zed.desktop;
+text/plain=dev.zed.Zed.desktop;
+text/x-cmake=dev.zed.Zed.desktop;
+x-scheme-handler/apidog=apidog.desktop

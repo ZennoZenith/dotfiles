@@ -913,14 +913,15 @@ bin_name = "crates-tui"
 
 ###########################################
 [[packages]]
-name = "rofi"
-description = ""
-languages = ["rust"]
-url = [""]
+name = "archlinux-xdg-menu"
+description = "Fix for dolphin opening in default apps"
+languages = []
+url = ["https://www.lorenzobettini.it/2024/05/fixing-the-empty-open-with-in-dolphin-in-hyprland"]
+tags = ["fix"]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "archlinux-xdg-menu"
+bin_name = "archlinux-xdg-menu"
 
 ###########################################
 [[packages]]
