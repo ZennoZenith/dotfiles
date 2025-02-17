@@ -58,6 +58,11 @@ let rustup_components = [
   rustfmt
   llvm-tools-preview
 ]
+ 
+# rustup target add
+let rustup_target = [
+  wasm32-unknown-unknown
+]
 
 let rust_toolchain = [
    'nightly --allow-downgrade'

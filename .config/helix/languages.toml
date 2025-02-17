@@ -1,6 +1,8 @@
-[language-server.superhtml-lsp]
-command = "superhtml"
-args = ["lsp"]
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"], except-features = [ "format" ] }
+deno = { command = "deno", args = [ "lsp" ], config.deno.enable = true }
+emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
+superhtml-lsp = { command = "superhtml", args = [ "lsp" ]}
 
 [language-server.eslint]
 command = "vscode-eslint-language-server"
@@ -21,16 +23,10 @@ problems = { shortenToSingleLine = false }
 disableRuleComment = { enable = true, location = "separateLine" }
 showDocumentation = { enable = false }
 
-[language-server.emmet-ls]
-args = ["--stdio"]
-command = "emmet-ls"
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
-[language-server.deno]
-command = "deno"
-args = ["lsp"]
 
 [language-server.pylsp.config.pylsp]
 plugins.pyls_mypy.enabled = true
@@ -113,40 +109,6 @@ auto-format = true
 language-servers = ["templ", "tailwindcss-ls", "emmet-ls"]
 
 [[language]]
-name = "typescript"
-language-servers = ["typescript-language-server", "eslint"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
-formatter = { command = "dprint", args = ["fmt", "--stdin", "ts"] }
-auto-format = true
-
-[[language]]
-name = "tsx"
-language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
-formatter = { command = "dprint", args = ["fmt", "--stdin", "tsx"] }
-auto-format = true
-
-[[language]]
-name = "javascript"
-language-servers = ["typescript-language-server", "eslint"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
-formatter = { command = "dprint", args = ["fmt", "--stdin", "js"] }
-auto-format = true
-
-[[language]]
-name = "jsx"
-language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
-formatter = { command = "dprint", args = ["fmt", "--stdin", "jsx"] }
-auto-format = true
-
-[[language]]
-name = "json"
-# formatter = { command = "prettier", args = [ "--parser", "json" ] }
-formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
-auto-format = true
-
-[[language]]
 name = "html"
 auto-format = true
 language-servers = ["vscode-html-language-server", "superhtml-lsp", "tailwindcss-ls", "emmet-ls"]
@@ -179,3 +141,43 @@ name = "markdown"
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 language-servers = ["marksman", "markdown-oxide"]
+
+[[language]]
+name = "typescript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+# language-servers = ["typescript-language-server", "eslint"]
+# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "ts"] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+# language-servers = ["typescript-language-server", "eslint"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "js"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] } ]
+# language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
+# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "jsx"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] } ]
+# language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
+# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "tsx"] }
+auto-format = true
+
+[[language]]
+name = "json"
+# formatter = { command = "prettier", args = [ "--parser", "json" ] }
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] } ]
+formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
+auto-format = true
+

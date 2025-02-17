@@ -858,6 +858,94 @@ bin_name = ["bibata-cursor-theme"]
 
 ###########################################
 [[packages]]
+name = "taplo"
+description = "TOML toolkit written in Rust"
+languages = ["rust"]
+url = ["https://github.com/tamasfe/taplo"]
+
+[packages.aur]
+package_name = "taplo-cli"
+bin_name = "taplo"
+
+###########################################
+[[packages]]
+name = "biome"
+description = ""
+languages = []
+url = ["https://biomejs.dev"]
+
+[packages.aur]
+package_name = "biome-bin"
+bin_name = "biome"
+
+###########################################
+[[packages]]
+name = "superhtml"
+description = "HTML Language Server & Templating Language Library"
+languages = ["zig"]
+url = ["https://github.com/kristoff-it/superhtml"]
+
+[packages.aur]
+package_name = "superhtml"
+bin_name = "superhtml"
+
+###########################################
+[[packages]]
+name = "deno"
+description = ""
+languages = ["rust"]
+url = []
+
+[packages.aur]
+package_name = "deno"
+bin_name = "deno"
+
+###########################################
+[[packages]]
+name = "crates-tui-git"
+description = "A TUI for exploring crates.io using Ratatui"
+languages = ["rust"]
+url = ["https://github.com/ratatui/crates-tui"]
+
+[packages.aur]
+package_name = "crates-tui-git"
+bin_name = "crates-tui"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
 name = "rofi"
 description = ""
 languages = ["rust"]
