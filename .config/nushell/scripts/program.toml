@@ -925,14 +925,13 @@ bin_name = "archlinux-xdg-menu"
 
 ###########################################
 [[packages]]
-name = "rofi"
-description = ""
-languages = ["rust"]
-url = [""]
+name = "uwsm"
+description = "Universal Wayland Session Manageraquamarine"
+tags = ["hyprland"]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "uwsm"
+bin_name = "uwsm"
 
 ###########################################
 [[packages]]
