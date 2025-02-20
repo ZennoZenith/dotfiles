@@ -935,14 +935,14 @@ bin_name = "uwsm"
 
 ###########################################
 [[packages]]
-name = "rofi"
+name = "keychain"
 description = ""
-languages = ["rust"]
-url = [""]
+languages = []
+url = ["https://www.funtoo.org/Funtoo:Keychain"]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "keychain"
+bin_name = "keychain"
 
 ###########################################
 [[packages]]
