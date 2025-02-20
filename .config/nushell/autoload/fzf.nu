@@ -71,7 +71,7 @@ const ctrl_t =  {
         send: executehostcommand
         cmd: "
           let fzf_ctrl_t_command = \$\"($env.FZF_CTRL_T_COMMAND) | fzf ($env.FZF_CTRL_T_OPTS)\";
-          let result = nu -l -i -c $fzf_ctrl_t_command;
+          let result = nu -c $fzf_ctrl_t_command;
           commandline edit --append $result;
           commandline set-cursor --end
         "
