@@ -8,19 +8,20 @@
 
   "modules-left": [
     "clock",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
-  "modules-center": ["hyprland/window"],
+  "modules-center": [],
   "modules-right": [
     "custom/notification",
     "tray",
-    "memory",
-    "cpu",
+    // "memory",
+    // "cpu",
     "network",
-    "battery",
+    // "battery",
     "backlight",
     "pulseaudio",
-    "pulseaudio#microphone",
+    // "pulseaudio#microphone",
     "custom/exit"
   ],
 
@@ -28,9 +29,16 @@
     "format": ""
   },
 
+  //   "interval": 60,
+  // "format": "{:%H:%M}",
+  // "max-length": 25
+
   "clock": {
-    "format": "{:%A    %B-%d-%Y    %I:%M:%S %p}",
-    "interval": 1,
+    "interval": 60,
+    "format": "{:%H:%M}",
+    "max-length": 25,
+    // "format": "{:%A    %B-%d-%Y    %I:%M:%S %p}",
+    // "interval": 1,
     "rotate": 0,
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
