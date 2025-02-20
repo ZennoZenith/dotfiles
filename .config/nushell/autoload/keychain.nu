@@ -7,12 +7,25 @@ def --env sshr [ssh_keys?: list<string>] {
     $ssh_keys | to text | fzf --no-sort --multi | lines | str join " "
   }
 
-  keychain --eval --quiet id_ed25519
+  let envs = keychain --eval --quiet $results
       | lines
       | where not ($it | is-empty)
       | parse "set -e {k}; set -x -U {k} {v};"
       | select k v
+
+   $envs
       | transpose --header-row
       | into record
       | load-env
+
+  const vendor_path = $nu.data-dir | path join "vendor/autoload"
+
+  if not ($vendor_path | path exists) {
+    mkdir $vendor_path
+  }
+
+  const keychain_vendor = $vendor_path | path join "keychain.nu"
+
+
+  $envs | each { |e| $'$env.($e.k) = "($e.v)"'} | to text | save -f $keychain_vendor
 }

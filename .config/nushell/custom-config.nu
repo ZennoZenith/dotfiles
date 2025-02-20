@@ -17,11 +17,12 @@ $env.ENV_CONVERSIONS.__zoxide_hooked = {
     to_string: { |v| $v | into string }
 }
 
-
 def app-init [] {
-    mkdir ($nu.data-dir | path join "vendor/autoload")
-    zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
-    atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
+    const vendor_path = $nu.data-dir | path join "vendor/autoload"
+    mkdir $vendor_path
+    zoxide init nushell | save -f ($vendor_path | path join "zoxide.nu")
+    atuin init nu | save -f ($vendor_path | path join "atuin.nu")
+    keychain_init
 }
 
 def init-completions [] {
