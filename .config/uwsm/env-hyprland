@@ -1,0 +1,3 @@
+# for HYPR* and AQ_* variables
+export HYPRCURSOR_SIZE=24
+export HYPRCURSOR_THEME=rose-pine-hyprcursor

@@ -25,3 +25,6 @@ command = /usr/bin/nu
 cursor-style = block
 
 mouse-hide-while-typing = true
+
+resize-overlay = never
+focus-follows-mouse = true
