@@ -52,7 +52,7 @@ const ctrl_h = {
           | get command
           | str replace --all (char newline) ' '
           | to text
-          | fzf --preview 'printf \'{}\' | nufmt --stdin | rg -v ERROR';
+          | fzf --no-sort --preview 'printf \'{}\' | nufmt --stdin | rg -v ERROR';
         commandline edit --append $result;
         commandline set-cursor --end
       "
