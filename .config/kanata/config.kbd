@@ -1,5 +1,6 @@
 ;; https://github.com/dreamsofcode-io/home-row-mods/tree/main
 ;; defsrc is still necessary
+;; key codes: https://github.com/jtroo/kanata/blob/main/parser/src/keys/mod.rs
 (defcfg
   process-unmapped-keys yes
 )
@@ -30,6 +31,10 @@
   ds (tap-hold $tap-time $hold-time s rmet)
 
   spchold (tap-hold $tap-time $hold-time spc (layer-while-held spacehold))
+  g (tap-hold $tap-time $hold-time g (layer-while-held special))
+  h (tap-hold $tap-time $hold-time h (layer-while-held special))
+  di (tap-hold $tap-time $hold-time i (layer-while-held special))
+  dd (tap-hold $tap-time $hold-time d (layer-while-held special))
 )
 
 (defsrc
@@ -48,7 +53,7 @@
   @escctrl
   _        _    _    _    _    _    _    _    _    _    _    _    _    _
   tab      _    _    _    _    _    _    _    _    _    _    _    _    _
-  @escctrl @a   @s   @d   @f   _    _    @j   @k   @l   @;   _    _
+  @escctrl @a   @s   @d   @f   @g   @h   @j   @k   @l   @;   _    _
   _        _    _    _    _    _    _    _    _    _    _    _
   _        _    _              @spchold       _    _    _
 )
@@ -57,7 +62,7 @@
   @escctrl
   grv      1    2    3    4    5    6    7    8    9    0    [    ]    bspc
   tab      '    ,    .    p    y    f    g    c    r    l    /    =    \
-  @escctrl @da  @do  @de  @du  i    d    @dh  @dt  @dn  @ds  -    ret
+  @escctrl @da  @do  @de  @du  @di  @dd  @dh  @dt  @dn  @ds  -    ret
   lsft     ;    q    j    k    x    b    m    w    v    z    rsft
   lctl     lmet lalt           spc            ralt rmet rctl
 )
@@ -83,5 +88,14 @@ $ ==> S-4
   tab      S-1  S-2  S-3  S-4  S-5   S-6  S-7  S-8  S-9  S-0  -    XX   XX
   @escctrl 1    2    3    4    5     6    7    8    9    0    +    ret
   lsft     [    ]    S-[  S-]  S-grv S-\  \    S--  grv  =    rsft
-  lctl     lmet lalt           XX             ralt rmet rctl
+  lctl     lmet lalt           XX              ralt rmet rctl
+)
+
+(deflayer special
+  @escctrl
+  XX       XX   XX   XX   XX   XX    XX   XX   XX   XX   XX   XX   XX   XX
+  blup     brdn brup vold volu mute  XX   prev pp   next prnt XX   XX   XX
+  @escctrl XX   XX   XX   XX   XX    XX   XX   XX   XX   XX   XX   ret
+  XX       XX   XX   XX   XX   XX    XX   XX   XX   XX   XX   rsft
+  lctl     lmet lalt           XX              ralt rmet rctl
 )
