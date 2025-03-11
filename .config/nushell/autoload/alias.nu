@@ -3,6 +3,7 @@ alias ll = ls -l
 alias la = ls -a
 
 alias lg = lazygit
+alias ld = lazydocker
 alias bt = btop --utf-force 
 alias fk = thefuck
 

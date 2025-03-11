@@ -174,6 +174,13 @@ let autostart_commands = [
 let hyprland_cursor = "https://github.com/ndom91/rose-pine-hyprcursor"
 
 
+let arch_fonts = [
+  noto-fonts
+  noto-fonts-cjk
+  noto-fonts-emoji
+  noto-fonts-extra
+]
+
 let nerd_fonts_aur = [
   ttf-cascadia-code-nerd
   ttf-cascadia-mono-nerd

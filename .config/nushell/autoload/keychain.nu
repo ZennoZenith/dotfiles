@@ -7,10 +7,16 @@ def --env sshr [ssh_keys?: list<string>] {
     $ssh_keys | to text | fzf --no-sort --multi | lines | str join " "
   }
 
+  ## if default shell is fish 
+  # parse "set -e {k}; set -x -U {k} {v};"
+  ## if default shell is nushell 
+  # parse "{k}={v}; export {k2};"
+
+  
   let envs = keychain --eval --quiet $results
       | lines
       | where not ($it | is-empty)
-      | parse "set -e {k}; set -x -U {k} {v};"
+      | parse "{k}={v}; export {k2};"
       | select k v
 
    $envs
@@ -25,7 +31,6 @@ def --env sshr [ssh_keys?: list<string>] {
   }
 
   const keychain_vendor = $vendor_path | path join "keychain.nu"
-
 
   $envs | each { |e| $'$env.($e.k) = "($e.v)"'} | to text | save -f $keychain_vendor
 }

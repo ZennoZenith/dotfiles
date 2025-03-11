@@ -946,14 +946,81 @@ bin_name = "keychain"
 
 ###########################################
 [[packages]]
-name = "rofi"
-description = ""
+name = "repgrep"
+description = " An interactive replacer for ripgrep that makes it easy to find and replace across files on the command line."
+languages = ["rust"]
+url = ["https://github.com/acheronfail/repgrep"]
+
+[packages.aur]
+package_name = "repgrep"
+bin_name = "rgr"
+
+###########################################
+[[packages]]
+name = "serie"
+description = "A rich git commit graph in your terminal, like magic 📚 "
+languages = ["rust"]
+url = ["https://github.com/lusingander/serie"]
+
+[packages.aur]
+package_name = "serie"
+bin_name = "serie"
+
+###########################################
+[[packages]]
+name = "tui-journal"
+description = " Your journal app if you live in a terminal "
 languages = ["rust"]
 url = [""]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "tui-journal"
+bin_name = "tjournal"
+
+###########################################
+[[packages]]
+name = "glow"
+description = " Render markdown on the CLI, with pizzazz! 💅🏻"
+languages = ["go"]
+url = ["https://github.com/charmbracelet/glow"]
+
+[packages.aur]
+package_name = "glow"
+bin_name = "glow"
+
+###########################################
+[[packages]]
+name = "rucola"
+description = " Terminal-based markdown note manager."
+languages = ["rust"]
+url = ["https://github.com/Linus-Mussmaecher/rucola"]
+
+[packages.aur]
+package_name = "rucola"
+bin_name = "rucola"
+
+###########################################
+[[packages]]
+name = "bmm"
+description = "get to your bookmarks in a flash"
+languages = ["rust"]
+url = ["https://github.com/dhth/bmm?ref=terminaltrove"]
+
+[packages.cargo]
+package_name = "bmm"
+bin_name = "bmm"
+
+###########################################
+[[packages]]
+name = "systemctl-tui"
+extra = true
+description = " A fast, simple TUI for interacting with systemd services and their logs "
+languages = ["rust"]
+url = ["https://github.com/rgwood/systemctl-tui?ref=terminaltrove"]
+
+[packages.aur]
+package_name = "systemctl-tui"
+bin_name = "systemctl-tui"
 
 ###########################################
 [[packages]]
