@@ -3,11 +3,16 @@ default_extension = "md"
 theme = "default_dark"
 vault_path = "~/syncthing/Notes2"
 stats_show = "Both"
-view_raw = true
 viewer = [
     "glow",
     "%p",
 ]
+viewer_type = "Markdown"
+secondary_viewer = [
+    "brave",
+    "%p",
+]
+secondary_viewer_type = "Html"
 enable_html = true
 css = "default_dark"
 katex = true
