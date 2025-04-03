@@ -1,6 +1,6 @@
 module keychain_mod {
   const keychain_env_dir = $'($nu.home-path)/.local/share/keychain'
-  const keychain_env_file = $'($keychain_env_dir)/env.nu'
+  const keychain_env_file = $'($keychain_env_dir)/env'
   
   def parse_keychain [keychain_text: string] {
     # eg:
@@ -28,15 +28,17 @@ module keychain_mod {
     }
   } 
 
-  export def load_keychian [] {
-    const file = if ( $keychain_env_file | path exists ) {
-      $keychain_env_file
-    } else {
-      null
-    };
+  export def --env load_keychian [] {
+    if not ( $keychain_env_file | path exists ) {
+      return
+    } 
 
-    source $file;
-    
+    let envs = open --raw $keychain_env_file
+      | lines
+      | parse "{k}, {v}" 
+      | transpose --header-row
+      | into record
+      | load-env
   }
   
 
@@ -67,7 +69,7 @@ module keychain_mod {
       ^mkdir -p $keychain_env_dir
     }
 
-    $envs | each { |e| $'$env.($e.k) = "($e.v)"'} | to text | save -f $keychain_env_file 
+    $envs | each { |e| $'($e.k), ($e.v)'} | to text | save -f $keychain_env_file 
   }
 }
 
