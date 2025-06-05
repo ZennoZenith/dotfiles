@@ -20,7 +20,7 @@ export-env {
   if not $__zoxide_hooked {
     $env.config.hooks.env_change.PWD = ($env.config.hooks.env_change.PWD | append {
       __zoxide_hook: true,
-      code: {|_, dir| zoxide add -- $dir}
+      code: {|_, dir| zoxide add $dir}
     })
   }
 }
@@ -35,7 +35,7 @@ def --env --wrapped __zoxide_z [...rest: string] {
   let path = match $rest {
     [] => {'~'},
     [ '-' ] => {'-'},
-    [ $arg ] if ($arg | path type) == 'dir' => {$arg}
+    [ $arg ] if ($arg | path expand | path type) == 'dir' => {$arg}
     _ => {
       zoxide query --exclude $env.PWD -- ...$rest | str trim -r -c "\n"
     }
@@ -68,3 +68,4 @@ alias zi = __zoxide_zi
 #   source ~/.zoxide.nu
 #
 # Note: zoxide only supports Nushell v0.89.0+.
+

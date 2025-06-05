@@ -159,8 +159,6 @@ keybinds clear-defaults=true {
         bind "Alt l" { MoveFocusOrTab "right"; }
         bind "Alt n" { NewPane; }
         bind "Alt o" { MoveTab "right"; }
-        bind "Alt o" { MoveTab "right"; }
-
         bind "Alt y" {
             LaunchOrFocusPlugin "harpoon" {
                 floating true; move_to_focused_tab true;

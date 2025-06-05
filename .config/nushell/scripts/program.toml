@@ -1024,6 +1024,65 @@ bin_name = "systemctl-tui"
 
 ###########################################
 [[packages]]
+name = "serpl"
+description = "A simple terminal UI for search and replace, ala VS Code."
+languages = ["rust"]
+url = ["https://github.com/yassinebridi/serpl"]
+
+[packages.aur]
+package_name = "serpl"
+bin_name = "serpl"
+
+[packages.cargo]
+package_name = "serpl"
+bin_name = "serpl"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
 name = "rofi"
 description = ""
 languages = ["rust"]

@@ -1,7 +1,7 @@
 file_types = ["markdown"]
 default_extension = "md"
 theme = "default_dark"
-vault_path = "~/syncthing/Notes2"
+vault_path = "~/syncthing/notes"
 stats_show = "Both"
 viewer = [
     "glow",
