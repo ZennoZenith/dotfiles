@@ -9,7 +9,7 @@
 [init]
         defaultBranch = main
 [commit]
-        # gpgsigh = true
+        gpgsigh = true
 # [gpg]
 #         program = /path/to/gpg
 [push]
@@ -20,5 +20,8 @@
 [delta]
         line-numbers = true
 [user]
-        name = ZennoZenith
-        email = ZennoZenith@proton.me
+        name = Zenno Zenith
+        email =  95485961+ZennoZenith@users.noreply.github.com 
+        signingkey = 38ED911B91EC576404E2307D8E2865FDDCFB3EFB
+[tag]
+        gpgSign = true
