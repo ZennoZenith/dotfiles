@@ -2,8 +2,8 @@ alias ll = ls -l
 alias la = ls -a
 
 alias lg = lazygit
-# alias bt = btop --utf-force
-alias bt = btop
+alias bt = btop --utf-force
+# alias bt = btop
 alias fk = thefuck
 
 # =============================== Bat =========================================

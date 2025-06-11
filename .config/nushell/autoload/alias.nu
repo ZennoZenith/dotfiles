@@ -4,8 +4,8 @@ alias la = ls -a
 
 alias lg = lazygit
 alias ld = lazydocker
-# alias bt = btop --utf-force
-alias bt = btop
+alias bt = btop --utf-force
+# alias bt = btop
 alias fk = thefuck
 
 alias b = bat
