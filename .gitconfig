@@ -22,6 +22,6 @@
 [user]
         name = Zenno Zenith
         email =  95485961+ZennoZenith@users.noreply.github.com 
-        signingkey = 38ED911B91EC576404E2307D8E2865FDDCFB3EFB
+        signingkey = 92D0D166A3C15F00
 [tag]
         gpgSign = true
