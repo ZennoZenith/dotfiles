@@ -184,15 +184,15 @@ let arch_fonts = [
 let nerd_fonts_aur = [
   ttf-cascadia-code-nerd
   ttf-cascadia-mono-nerd
-  ttf-fira-code
+  # ttf-fira-code
   ttf-fira-mono
-  ttf-fira-sans
+  # ttf-fira-sans
   ttf-firacode-nerd
-  ttf-iosevka-nerd
-  ttf-iosevkaterm-nerd
+  # ttf-iosevka-nerd
+  # ttf-iosevkaterm-nerd
   ttf-jetbrains-mono-nerd
   ttf-jetbrains-mono
-  ttf-nerd-fonts-symbols
-  ttf-nerd-fonts-symbols
-  ttf-nerd-fonts-symbols-mono
+  # ttf-nerd-fonts-symbols
+  # ttf-nerd-fonts-symbols
+  # ttf-nerd-fonts-symbols-mono
 ]

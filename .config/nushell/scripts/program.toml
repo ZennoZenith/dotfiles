@@ -1051,6 +1051,12 @@ bin_name = "rofi"
 ###########################################
 [[packages]]
 name = "rofi"
+package_name = "kanata-bin"
+bin_name = "kanata"
+
+###########################################
+[[packages]]
+name = "rust"
 description = ""
 languages = ["rust"]
 url = [""]
@@ -1080,6 +1086,8 @@ url = [""]
 [packages.aur]
 package_name = "rofi"
 bin_name = "rofi"
+package_name = "rust"
+bin_name = "rust"
 
 ###########################################
 [[packages]]
