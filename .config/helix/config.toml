@@ -22,7 +22,7 @@ scroll-lines = 1
 true-color = true
 text-width = 100
 end-of-line-diagnostics = "hint"
-shell = ["nu", "-c"]
+shell = ["nu", "--stdin", "-c"]
 
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
