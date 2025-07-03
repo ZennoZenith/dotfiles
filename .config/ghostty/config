@@ -1,6 +1,14 @@
 config-file = keybindings
-theme = catppuccin-mocha
+
+# theme = 
+# theme = catppuccin-mocha
 # theme = GruvboxDark
+# theme = Banana Blueberry
+# theme = Firefly Traditional
+# theme = Kibble
+# theme = Nocturnal Winter
+theme = Mathias
+
 
 # font-family = Meslo LGS Nerd Font Mono
 # font-family = CaskaydiaMono Nerd Font
@@ -9,7 +17,7 @@ font-family = CaskaydiaCove Nerd Font
 font-size = 12
 
 # background-opacity = 0.95
-background-opacity = 0.6
+# background-opacity = 0.6
 
 gtk-titlebar = false
 
@@ -20,7 +28,7 @@ window-padding-y = 1
 
 command = /usr/bin/nu
 
-# bold-is-bright = true
+bold-is-bright = true
 
 cursor-style = block
 

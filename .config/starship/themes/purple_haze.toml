@@ -1,27 +1,28 @@
 format = """
-[](#ffff00)\
-[ ](bg:#ffff00 fg:#ff0080)\
-[ ](bg:#f5b041 fg:#ffff00)\
+[](#9A348E)\
+[ ](bg:#9A348E fg:#FFFFFF)\
 $username\
-[](bg:#ff8700 fg:#f5b041)\
-[   ](bg:#ff8700 fg:#FFFFFF)\
+[](bg:#DA627D fg:#9A348E)\
+[ ](bg:#DA627D fg:#FFFFFF)\
 $directory\
-[](fg:#ff8700 bg:#d75f00)\
+[](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
-[ ](fg:#d75f00 bg:#d70000)\
+[](fg:#FCA17D bg:#86BBD8)\
 $c\
 $golang\
 $java\
 $nodejs\
 $python\
 $rust\
-[ ](fg:#d70000)\
+[](fg:#86BBD8 bg:#06969A)\
+$docker_context\
+[](fg:#06969A bg:#33658A)\
+$time\
+[ ](fg:#33658A)\
 $fill\
 $cmd_duration\
 $hostname\
-[ ](#FFFFFF)\
-$time\
 $character"""
 
 # Disable the blank line at the start of the prompt
@@ -31,14 +32,14 @@ add_newline = false
 # and use the os module below
 [username]
 show_always = true
-style_user = "fg:#031b41 bg:#f5b041"
-style_root = "fg:#031b41 bg:#f5b041"
-format = '[ $user ]($style)'
+style_user = "bg:#9A348E"
+style_root = "bg:#9A348E"
+format = '[$user ]($style)'
 disabled = false
 
 [cmd_duration]
 min_time = 1
-format = 'took [$duration](bold #ff0080) on'
+format = 'took [$duration](bold #33658A) on'
 
 [character]
 success_symbol = '[](bold green) '
@@ -46,7 +47,7 @@ error_symbol = '[](bold red) '
 
 [hostname]
 ssh_only = false
-format = ' [$hostname](#d75f00) '
+format = ' [$hostname](#FCA17D) '
 disabled = false
 
 # An alternative to the username module which displays a symbol that
@@ -56,7 +57,7 @@ style = "bg:#9A348E"
 disabled = true # Disabled by default
 
 [directory]
-style = "fg:#133356 bg:#ff8700"
+style = "fg:#FFFFFF bg:#DA627D"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -79,7 +80,7 @@ symbol = ' '
 
 [c]
 symbol = ""
-style = "bg:#d70000"
+style = "bg:#86BBD8"
 format = '[ $symbol ]($style)'
 
 [docker_context]
@@ -89,12 +90,13 @@ format = '[ $symbol $context ]($style) $path'
 
 [git_branch]
 symbol = ""
-style = "fg:#FFFFFF bg:#d75f00"
-format = '[ $symbol](fg:#00bfff bg:#d75f00)[ $branch ](bold $style)'
+style = "bg:#FCA17D"
+format = '[ $symbol $branch ]($style)'
 
 
 [git_status]
-style = "fg:#00bfff bg:#d75f00"
+format = '[$all_status$ahead_behind]($style)'
+style = "bg:#FCA17D"
 conflicted = "🏳"
 up_to_date = " "
 untracked = " "
@@ -103,24 +105,23 @@ diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 stashed = ""
 modified = " "
-staged = '[++\($count\)](bold fg:#00bfff bg:#d75f00)'
+staged = '[++\($count\)](bg:#FCA17D)'
 renamed = "襁"
 deleted = ""
-format = '[$all_status$ahead_behind]($style)'
 
 [golang]
 symbol = "go"
-style = "fg:#FFFFFF bg:#d70000"
-format = '[ $symbol ](bold $style)'
+style = "fg:#000000 bg:#86BBD8"
+format = '[ $symbol ]($style)'
 
 [java]
 symbol = ""
-style = "fg:#FFFFFF bg:#d70000"
+style = "bg:#86BBD8"
 format = '[ $symbol ]($style)'
 
 [nodejs]
 symbol = ""
-style = "fg:#FFFFFF bg:#d70000"
+style = "bg:#86BBD8"
 format = '[ $symbol ]($style)'
 
 [python]
@@ -129,16 +130,16 @@ format = '[ $symbol ]($style)'
 # Note this will only work when the venv is inside the project and it will only
 # work in the directory that contains the venv dir but maybe this is ok?
 symbol = ' '
-style = "fg:#FFFFFF bg:#d70000"
+style = "bg:#86BBD8"
 format = '[ $symbol ]($style)'
 
 [rust]
 symbol = ""
-style = "fg:#FFFFFF bg:#d70000"
+style = "bg:#86BBD8"
 format = '[ $symbol ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "#BDC3C7"
-format = '[$time ]($style)'
+style = "bg:#33658A"
+format = '[  $time ]($style)'

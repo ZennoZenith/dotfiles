@@ -2,7 +2,7 @@ def starship-theme [] {
   ls -s ~/.config/starship/themes | select name
 }
 
-def "starship-theme create" [] {
+export def "starship-theme create" [] {
   let themes = starship preset -l | lines 
   for $theme in $themes {
     if ( $theme | is-empty ) {

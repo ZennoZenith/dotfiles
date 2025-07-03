@@ -48,7 +48,9 @@ source ~/dotfiles/.config/nushell/scripts/fzf/autoload.nu
 source ~/dotfiles/.config/nushell/scripts/swww/autoload.nu
 source ~/dotfiles/.config/nushell/scripts/yazi/autoload.nu
 source ~/dotfiles/.config/nushell/scripts/zoxide/autoload.nu
-source ($nu.config-path | path dirname | path join 'nu-themes/catppuccin-mocha.nu')
+
+## theme is handeled by ghostty terminal
+# source ($nu.config-path | path dirname | path join 'nu-themes/catppuccin-mocha.nu')
 
 
 use ~/dotfiles/.config/nushell/scripts/keychain/keychain.nu *
