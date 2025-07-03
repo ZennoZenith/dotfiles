@@ -1,0 +1,27 @@
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[core]
+        autolf = true
+        pager = delta
+[init]
+        defaultBranch = main
+[commit]
+        gpgsigh = true
+# [gpg]
+#         program = /path/to/gpg
+[push]
+        autoSetupRemote = true
+        default = current
+[alias]
+        undo = reset --sort HEAD^
+[delta]
+        line-numbers = true
+[user]
+        name = Zenno Zenith
+        email =  95485961+ZennoZenith@users.noreply.github.com 
+        signingkey = 7D9AF1B2C19131AD
+[tag]
+        gpgSign = true
