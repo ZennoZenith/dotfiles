@@ -1,0 +1,169 @@
+theme = "sonokai_transparent"
+# theme = "tokyonight"
+# theme = "tokyonight_transparent"
+# theme = "doom_acario_dark" # does not look good for content inside markdown code block
+# theme = "sonokai"
+# theme = "snazzy_transparent"
+# theme = "gruvbox_transparent"
+# theme = "catppuccin_mocha_transparent"
+
+[editor]
+bufferline = "multiple"
+color-modes = true
+completion-trigger-len = 1
+cursorline = true
+default-line-ending = "lf"
+insert-final-newline = false
+idle-timeout = 10
+line-number = "relative"
+mouse = false
+rulers = [80]
+scroll-lines = 1
+true-color = true
+text-width = 100
+end-of-line-diagnostics = "hint"
+shell = ["nu", "-c"]
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+
+[editor.whitespace.render]
+space = "none"
+nbsp = "none"
+tab = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "version-control",
+  "spacer",
+  "separator",
+  "file-name",
+  "file-modification-indicator",
+]
+right = [
+  "spinner",
+  "spacer",
+  "workspace-diagnostics",
+  "separator",
+  "spacer",
+  "diagnostics",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+separator = "╎"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+# git-ignore = false
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 10 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 40
+wrap-at-text-width = true
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = false
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "╎"
+skip-levels = 0
+
+[keys.normal]
+# g = { a = "code_action" } # Maps `ga` to show possible code actions
+C-z = "no_op"
+ret = [
+  "move_line_down",
+  "goto_first_nonwhitespace",
+] # Mps the enter key to move to start of next line
+# X = "extend_line_above"
+D = "delete_char_backward"
+C-p = ["move_line_up", "scroll_up"]
+C-n = ["move_line_down", "scroll_down"]
+# esc = ["collapse_selection","keep_primary_selection"]
+esc = ["collapse_selection"]
+";" = "keep_primary_selection"
+X = "extend_line_up"
+A-x = "extend_line_above"
+# ---------------
+# C-v = "vsplit"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
+# "C-," = "goto_previous_buffer"
+# "C-." = "goto_next_buffer"
+"K" = "insert_newline"
+# Move line up/down using A-k, A-j
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+"A-j" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_down",
+  "paste_before",
+]
+
+[keys.insert]
+C-z = "no_op"
+# j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+C-ret = "open_below"
+C-S-ret = "open_above"
+# C-left = "move_prev_word_start"
+# C-right = "move_next_word_start"
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+# VSCode-like auto-completeion (pretty much all IDEs do it on C-space)
+"C-space" = "completion"
+
+[keys.normal.space]
+w = ":write-all"
+# q = ":quit"
+c = ":buffer-close"
+l = [
+  ":lsp-stop",
+  ":lsp-restart",
+]
+
+# Config Modec = ":bc"
+[keys.normal.g]
+a = "code_action" # Maps `ga` to show possible code actions
+# r = [":config-reload", ":reload-all"]
+# o = ":config-open"
+# l = ":o ~/.config/helix/languages.toml"
+
+# https://github.com/ravsii/.helix/blob/main/config.toml

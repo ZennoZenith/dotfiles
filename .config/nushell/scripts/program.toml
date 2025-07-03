@@ -1,0 +1,1137 @@
+###########################################
+[[packages]]
+name = "helix"
+description = ""
+
+[packages.aur]
+package_name = "helix"
+bin_name = "helix"
+symlink_as = "hx"
+
+###########################################
+[[packages]]
+name = "alacritty"
+description = ""
+
+[packages.aur]
+package_name = "alacritty"
+bin_name = "alacritty"
+
+###########################################
+[[packages]]
+name = "kitty"
+description = ""
+
+[packages.aur]
+package_name = "kitty"
+bin_name = "kitty"
+
+###########################################
+[[packages]]
+name = "ttf-font-awesome"
+description = ""
+
+[packages.aur]
+package_name = "ttf-font-awesome"
+
+###########################################
+[[packages]]
+name = "wireguard-tools"
+description = ""
+
+[packages.aur]
+package_name = "wireguard-tools"
+bin_name = "wireguard-tools"
+
+###########################################
+[[packages]]
+name = "syncthing"
+description = ""
+
+[packages.aur]
+package_name = "syncthing"
+bin_name = "syncthing"
+
+###########################################
+[[packages]]
+name = "clang"
+description = ""
+
+[packages.aur]
+package_name = "clang"
+bin_name = "clang"
+
+###########################################
+[[packages]]
+name = "mold"
+description = ""
+
+[packages.aur]
+package_name = "mold"
+bin_name = "mold"
+
+###########################################
+[[packages]]
+name = "lld"
+description = ""
+
+[packages.aur]
+package_name = "lld"
+bin_name = "lld"
+
+###########################################
+[[packages]]
+name = "fastfetch"
+description = ""
+
+[packages.aur]
+package_name = "fastfetch"
+bin_name = "fastfetch"
+
+###########################################
+[[packages]]
+name = "p7zip"
+description = ""
+
+[packages.aur]
+package_name = "p7zip"
+bin_name = "p7zip"
+
+###########################################
+[[packages]]
+name = "pueue"
+description = ""
+
+[packages.aur]
+package_name = "pueue"
+bin_name = "pueue"
+
+###########################################
+[[packages]]
+name = "yazi"
+description = ""
+
+[packages.aur]
+package_name = "yazi"
+bin_name = "yazi"
+
+###########################################
+[[packages]]
+name = "tree"
+description = ""
+
+[packages.aur]
+package_name = "tree"
+bin_name = "tree"
+
+###########################################
+[[packages]]
+name = "age"
+description = ""
+
+[packages.aur]
+package_name = "age"
+bin_name = "age"
+
+###########################################
+[[packages]]
+name = "ouch"
+description = ""
+
+[packages.aur]
+package_name = "ouch"
+bin_name = "ouch"
+
+###########################################
+[[packages]]
+name = "tealdeer"
+description = ""
+
+[packages.aur]
+package_name = "tealdeer"
+bin_name = "tealdeer"
+
+###########################################
+[[packages]]
+name = "watchexec"
+description = ""
+url = ["https://github.com/watchexec/watchexec"]
+
+[packages.aur]
+package_name = "watchexec"
+bin_name = "watchexec"
+
+###########################################
+[[packages]]
+name = "bacon"
+description = ""
+
+[packages.aur]
+package_name = "bacon"
+bin_name = "bacon"
+
+###########################################
+[[packages]]
+name = "nushell"
+description = ""
+
+[packages.aur]
+package_name = "nushell"
+bin_name = "nu"
+
+###########################################
+[[packages]]
+name = "fzf"
+description = ""
+
+[packages.aur]
+package_name = "fzf"
+bin_name = "fzf"
+
+###########################################
+[[packages]]
+name = "zoxide"
+description = ""
+
+[packages.aur]
+package_name = "zoxide"
+bin_name = "zoxide"
+
+###########################################
+[[packages]]
+name = "ripgrep"
+description = ""
+
+[packages.aur]
+package_name = "ripgrep"
+bin_name = "rg"
+
+###########################################
+[[packages]]
+name = "bat"
+description = ""
+
+[packages.aur]
+package_name = "bat"
+bin_name = "bat"
+
+###########################################
+[[packages]]
+name = "zellij"
+description = ""
+
+[packages.aur]
+package_name = "zellij"
+bin_name = "zellij"
+
+###########################################
+[[packages]]
+name = "lsd"
+description = ""
+
+[packages.aur]
+package_name = "lsd"
+bin_name = "lsd"
+
+###########################################
+[[packages]]
+name = "csvq"
+description = ""
+
+[packages.aur]
+package_name = "csvq-bin"
+bin_name = "csvq"
+
+###########################################
+[[packages]]
+name = "mprocs"
+description = ""
+
+[packages.aur]
+package_name = "mprocs-bin"
+bin_name = "mprocs"
+
+###########################################
+[[packages]]
+name = "dprint"
+description = ""
+
+[packages.aur]
+package_name = "dprint-bin"
+bin_name = "dprint"
+
+###########################################
+[[packages]]
+name = "github-cli"
+description = ""
+
+[packages.aur]
+package_name = "github-cli"
+bin_name = "gh"
+
+###########################################
+[[packages]]
+name = "carapace"
+description = ""
+url = ["https://github.com/carapace-sh/carapace-bin"]
+
+[packages.aur]
+package_name = "carapace-bin"
+bin_name = "carapace"
+
+###########################################
+[[packages]]
+name = "fd"
+description = ""
+
+[packages.aur]
+package_name = "fd"
+bin_name = "fd"
+
+###########################################
+[[packages]]
+name = "sd"
+description = ""
+
+[packages.aur]
+package_name = "sd"
+bin_name = "sd"
+
+###########################################
+[[packages]]
+name = "lazygit"
+description = ""
+
+[packages.aur]
+package_name = "lazygit"
+bin_name = "lazygit"
+
+###########################################
+[[packages]]
+name = "atuin"
+description = ""
+
+[packages.aur]
+package_name = "atuin"
+bin_name = "atuin"
+
+###########################################
+[[packages]]
+name = "sccache"
+description = ""
+
+[packages.aur]
+package_name = "sccache"
+bin_name = "sccache"
+
+###########################################
+[[packages]]
+name = "thefuck"
+description = ""
+
+[packages.aur]
+package_name = "thefuck"
+bin_name = "thefuck"
+
+###########################################
+[[packages]]
+name = "csvlens"
+description = ""
+
+[packages.aur]
+package_name = "csvlens"
+bin_name = "csvlens"
+
+###########################################
+[[packages]]
+name = "git-delta"
+description = ""
+
+[packages.aur]
+package_name = "git-delta"
+bin_name = "delta"
+
+###########################################
+[[packages]]
+name = "just"
+description = ""
+
+[packages.aur]
+package_name = "just"
+bin_name = "just"
+
+###########################################
+[[packages]]
+name = "fish"
+description = ""
+
+[packages.aur]
+package_name = "fish"
+bin_name = "fish"
+
+###########################################
+[[packages]]
+name = "xdg-desktop-portal-hyprland"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "xdg-desktop-portal-hyprland"
+bin_name = "xdg-desktop-portal-hyprland"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "dunst"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "dunst"
+bin_name = "dunst"
+
+###########################################
+[[packages]]
+name = "pavucontrol"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "pavucontrol"
+bin_name = "pavucontrol"
+
+###########################################
+[[packages]]
+name = "pamixer"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "pamixer"
+bin_name = "pamixer"
+
+###########################################
+[[packages]]
+name = "wofi"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "wofi"
+bin_name = "wofi"
+
+###########################################
+[[packages]]
+name = "waybar"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "waybar"
+bin_name = "waybar"
+
+###########################################
+[[packages]]
+name = "hyprpolkitagent"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hyprpolkitagent"
+bin_name = "hyprpolkitagent"
+
+###########################################
+[[packages]]
+name = "hypridle"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hypridle"
+bin_name = "hypridle"
+
+###########################################
+[[packages]]
+name = "hyprlock"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hyprlock"
+bin_name = "hyprlock"
+
+###########################################
+[[packages]]
+name = "hyprpaper"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hyprpaper"
+bin_name = "hyprpaper"
+
+###########################################
+[[packages]]
+name = "walker"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "walker-bin"
+bin_name = "walker"
+
+###########################################
+[[packages]]
+name = "hyprshot"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hyprshot"
+bin_name = "hyprshot"
+
+###########################################
+[[packages]]
+name = "grimblast"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "grimblast"
+bin_name = "grimblast"
+
+###########################################
+[[packages]]
+name = "wlogout"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "wlogout"
+bin_name = "wlogout"
+
+###########################################
+[[packages]]
+name = "wl-clipboard"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "wl-clipboard"
+bin_name = "wl-clipboard"
+
+###########################################
+[[packages]]
+name = "discord"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "discord"
+bin_name = "discord"
+
+###########################################
+[[packages]]
+name = "hyprpicker"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hyprpicker"
+bin_name = "hyprpicker"
+
+###########################################
+[[packages]]
+name = "hyprsunset"
+description = ""
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "hyprsunset"
+bin_name = "hyprsunset"
+
+###########################################
+[[packages]]
+name = "pipewire"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "pipewire"
+bin_name = "pipewire"
+
+###########################################
+[[packages]]
+name = "wireplumber"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "wireplumber"
+bin_name = "wireplumber"
+
+###########################################
+[[packages]]
+name = "pamixer"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "pamixer"
+bin_name = "pamixer"
+
+###########################################
+[[packages]]
+name = "pavucontrol"
+description = ""
+tags = ["hyprland", "audio"]
+
+[packages.aur]
+package_name = "pavucontrol"
+bin_name = "pavucontrol"
+
+###########################################
+[[packages]]
+name = "brightnessctl"
+description = ""
+tags = ["hyprland", "brightness"]
+
+[packages.aur]
+package_name = "brightnessctl"
+bin_name = "brightnessctl"
+
+###########################################
+[[packages]]
+name = "nwg-look"
+description = "Theaming gtk apps"
+tags = ["gtk"]
+
+[packages.aur]
+package_name = "nwg-look"
+bin_name = "nwg-look"
+
+###########################################
+# [[packages]]
+# name = "catppuccin-gtk-theme-mocha"
+# description = ""
+# tags = ["gtk"]
+
+# [packages.aur]
+# package_name = "catppuccin-gtk-theme-mocha"
+# bin_name = "catppuccin-gtk-theme-mocha"
+
+###########################################
+[[packages]]
+name = "spacedrive"
+description = ""
+
+[packages.aur]
+package_name = "spacedrive-bin"
+bin_name = "spacedrive"
+
+###########################################
+[[packages]]
+name = "skim"
+description = "Fuzzy finder similar fzf"
+languages = ["rust"]
+url = ["https://github.com/skim-rs/skim"]
+
+[packages.aur]
+package_name = "skim"
+bin_name = "sk"
+
+###########################################
+[[packages]]
+name = "topgrade"
+description = "Keeping your system up to date usually involves invoking multiple package managers. This results in big, non-portable shell one-liners saved in your shell. To remedy this, Topgrade detects which tools you use and runs the appropriate commands to update them."
+languages = ["rust"]
+url = ["https://github.com/topgrade-rs/topgrade"]
+
+[packages.aur]
+package_name = "topgrade-bin"
+bin_name = "topgrade"
+
+###########################################
+# [[packages]]
+# name = "nvrs"
+# description = ""
+# languages = ["rust"]
+# url = [
+#   "https://github.com/adamperkowski/nvrs",
+#   "https://nvrs.adamperkowski.dev",
+# ]
+
+# [packages.aur]
+# package_name = "nvrs-bin"
+# bin_name = "nvrs"
+
+###########################################
+[[packages]]
+name = "monolith"
+description = "A CLI tool for saving complete web pages as a single HTML file."
+languages = ["rust"]
+url = ["https://github.com/Y2Z/monolith", "https://terminaltrove.com/monolith/"]
+
+[packages.aur]
+package_name = "monolith"
+bin_name = "monolith"
+
+###########################################
+[[packages]]
+name = "aim"
+description = "A command line download/upload tool with resume."
+languages = ["rust"]
+url = ["https://github.com/mihaigalos/aim"]
+
+[packages.cargo]
+package_name = "aim"
+bin_name = "aim"
+
+# [packages.aur]
+# package_name = "rofi"
+# bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "jaq"
+description = "A jq clone focused on correctness, speed, and simplicity"
+languages = ["rust"]
+url = ["https://github.com/01mf02/jaq", "https://terminaltrove.com/jaq"]
+
+[packages.aur]
+package_name = "jaq"
+bin_name = "jaq"
+
+###########################################
+[[packages]]
+name = "oha"
+description = "A tiny TUI program that sends some load to a web application."
+languages = ["rust"]
+url = ["https://github.com/hatoo/oha", "https://terminaltrove.com/oha"]
+
+[packages.aur]
+package_name = "oha"
+bin_name = "oha"
+
+###########################################
+[[packages]]
+name = "difftastic"
+description = "A structural diff that understands syntax"
+languages = ["rust"]
+url = ["https://github.com/Wilfred/difftastic", "https://terminaltrove.com/difftastic"]
+
+[packages.aur]
+package_name = "difftastic"
+bin_name = "difftastic"
+
+###########################################
+[[packages]]
+name = "koji"
+description = "An interactive CLI for creating conventional commits."
+languages = ["rust"]
+url = ["https://github.com/cococonscious/koji"]
+
+[packages.cargo]
+package_name = "koji"
+bin_name = "koji"
+locked = true
+
+###########################################
+[[packages]]
+name = "qrtool"
+description = "An utility for encoding or decoding QR code"
+languages = ["rust"]
+url = ["https://github.com/sorairolake/qrtool"]
+
+[packages.aur]
+package_name = "qrtool"
+bin_name = "qrtool"
+
+###########################################
+[[packages]]
+name = "pik"
+description = "Process Interactive Kill"
+languages = ["rust"]
+url = ["https://github.com/jacek-kurlit/pik"]
+
+[packages.aur]
+package_name = "pik"
+bin_name = "pik"
+
+###########################################
+[[packages]]
+name = "pastel"
+description = "Generate, analyze, convert and manipulate colors."
+languages = ["rust"]
+url = ["https://github.com/sharkdp/pastel"]
+
+[packages.aur]
+package_name = "pastel"
+bin_name = "pastel"
+
+###########################################
+[[packages]]
+name = "termscp"
+description = "A feature rich terminal file transfer tool."
+languages = ["rust"]
+url = ["https://github.com/veeso/termscp"]
+
+[packages.aur]
+package_name = "termscp"
+bin_name = "termscp"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "gping"
+description = "Ping, but with a graph."
+languages = ["rust"]
+url = ["https://github.com/orf/gping?ref=terminaltrove"]
+
+[packages.aur]
+package_name = "gping"
+bin_name = "gping"
+
+###########################################
+# [[packages]]
+# name = "superfile"
+# description = "Pretty fancy and modern terminal file manager"
+# languages = ["go"]
+# url = ["https://github.com/yorukot/superfile"]
+
+# [packages.aur]
+# package_name = "superfile-bin"
+# bin_name = ["spf", "superfile"]
+
+###########################################
+[[packages]]
+name = "swww"
+description = ""
+languages = []
+url = []
+
+[packages.aur]
+package_name = "swww"
+bin_name = "swww"
+
+###########################################
+[[packages]]
+name = "jome"
+description = "An emoji picker desktop application"
+languages = ["c++"]
+url = ["https://github.com/eepp/jome?tab=readme-ov-file#install-on-arch-linux"]
+
+[packages.aur]
+package_name = "jome-git"
+bin_name = "jome"
+
+###########################################
+[[packages]]
+name = "bibata-cursor-theme"
+description = "Open source, compact, and material designed cursor set."
+languages = []
+tags = ["cursor"]
+url = ["https://github.com/ful1e5/Bibata_Cursor"]
+
+[packages.aur]
+package_name = "bibata-cursor-theme-bin"
+bin_name = ["bibata-cursor-theme"]
+
+###########################################
+[[packages]]
+name = "taplo"
+description = "TOML toolkit written in Rust"
+languages = ["rust"]
+url = ["https://github.com/tamasfe/taplo"]
+
+[packages.aur]
+package_name = "taplo-cli"
+bin_name = "taplo"
+
+###########################################
+[[packages]]
+name = "biome"
+description = ""
+languages = []
+url = ["https://biomejs.dev"]
+
+[packages.aur]
+package_name = "biome-bin"
+bin_name = "biome"
+
+###########################################
+[[packages]]
+name = "superhtml"
+description = "HTML Language Server & Templating Language Library"
+languages = ["zig"]
+url = ["https://github.com/kristoff-it/superhtml"]
+
+[packages.aur]
+package_name = "superhtml"
+bin_name = "superhtml"
+
+###########################################
+[[packages]]
+name = "deno"
+description = ""
+languages = ["rust"]
+url = []
+
+[packages.aur]
+package_name = "deno"
+bin_name = "deno"
+
+###########################################
+[[packages]]
+name = "crates-tui-git"
+description = "A TUI for exploring crates.io using Ratatui"
+languages = ["rust"]
+url = ["https://github.com/ratatui/crates-tui"]
+
+[packages.aur]
+package_name = "crates-tui-git"
+bin_name = "crates-tui"
+
+###########################################
+[[packages]]
+name = "archlinux-xdg-menu"
+description = "Fix for dolphin opening in default apps"
+languages = []
+url = ["https://www.lorenzobettini.it/2024/05/fixing-the-empty-open-with-in-dolphin-in-hyprland"]
+tags = ["fix"]
+
+[packages.aur]
+package_name = "archlinux-xdg-menu"
+bin_name = "archlinux-xdg-menu"
+
+###########################################
+[[packages]]
+name = "uwsm"
+description = "Universal Wayland Session Manageraquamarine"
+tags = ["hyprland"]
+
+[packages.aur]
+package_name = "uwsm"
+bin_name = "uwsm"
+
+###########################################
+[[packages]]
+name = "keychain"
+description = ""
+languages = []
+url = ["https://www.funtoo.org/Funtoo:Keychain"]
+
+[packages.aur]
+package_name = "keychain"
+bin_name = "keychain"
+
+###########################################
+[[packages]]
+name = "repgrep"
+description = " An interactive replacer for ripgrep that makes it easy to find and replace across files on the command line."
+languages = ["rust"]
+url = ["https://github.com/acheronfail/repgrep"]
+
+[packages.aur]
+package_name = "repgrep"
+bin_name = "rgr"
+
+###########################################
+[[packages]]
+name = "serie"
+description = "A rich git commit graph in your terminal, like magic 📚 "
+languages = ["rust"]
+url = ["https://github.com/lusingander/serie"]
+
+[packages.aur]
+package_name = "serie"
+bin_name = "serie"
+
+###########################################
+[[packages]]
+name = "tui-journal"
+description = " Your journal app if you live in a terminal "
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "tui-journal"
+bin_name = "tjournal"
+
+###########################################
+[[packages]]
+name = "glow"
+description = " Render markdown on the CLI, with pizzazz! 💅🏻"
+languages = ["go"]
+url = ["https://github.com/charmbracelet/glow"]
+
+[packages.aur]
+package_name = "glow"
+bin_name = "glow"
+
+###########################################
+[[packages]]
+name = "rucola"
+description = " Terminal-based markdown note manager."
+languages = ["rust"]
+url = ["https://github.com/Linus-Mussmaecher/rucola"]
+
+[packages.aur]
+package_name = "rucola"
+bin_name = "rucola"
+
+###########################################
+[[packages]]
+name = "bmm"
+description = "get to your bookmarks in a flash"
+languages = ["rust"]
+url = ["https://github.com/dhth/bmm?ref=terminaltrove"]
+
+[packages.cargo]
+package_name = "bmm"
+bin_name = "bmm"
+
+###########################################
+[[packages]]
+name = "systemctl-tui"
+extra = true
+description = " A fast, simple TUI for interacting with systemd services and their logs "
+languages = ["rust"]
+url = ["https://github.com/rgwood/systemctl-tui?ref=terminaltrove"]
+
+[packages.aur]
+package_name = "systemctl-tui"
+bin_name = "systemctl-tui"
+
+###########################################
+[[packages]]
+name = "serpl"
+description = "A simple terminal UI for search and replace, ala VS Code."
+languages = ["rust"]
+url = ["https://github.com/yassinebridi/serpl"]
+
+[packages.aur]
+package_name = "serpl"
+bin_name = "serpl"
+
+[packages.cargo]
+package_name = "serpl"
+bin_name = "serpl"
+
+###########################################
+[[packages]]
+name = "andcli"
+description = "A 2FA TUI for your shell"
+languages = ["go"]
+url = ["https://github.com/tjblackheart/andcli"]
+
+[packages.aur]
+package_name = "andcli"
+bin_name = "andcli"
+
+###########################################
+[[packages]]
+name = "scooter"
+description = "Interactive find and replace in the terminal Resources"
+languages = ["rust"]
+url = ["https://github.com/thomasschafer/scooter"]
+
+[packages.cargo]
+package_name = "scooter"
+bin_name = "scooter"
+
+[packages.aur]
+package_name = "scooter-bin"
+bin_name = "scooter"
+
+###########################################
+[[packages]]
+name = "basalt"
+description = "TUI Application to manage Obsidian notes directly from the terminal"
+languages = ["rust"]
+url = ["https://github.com/erikjuhani/basalt"]
+
+[packages.cargo]
+package_name = "basalt-tui"
+
+bin_name = "basalt"
+
+###########################################
+[[packages]]
+name = "bitwarden-cli"
+description = "Bitwarden CLI"
+languages = []
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "lazysql"
+description = "A cross-platform TUI database management tool written in Go."
+languages = ["go"]
+url = ["https://github.com/jorgerojas26/lazysql"]
+
+[packages.aur]
+package_name = "lazysql-bin"
+bin_name = "lazysql"
+
+###########################################
+[[packages]]
+name = "rofi"
+package_name = "kanata-bin"
+bin_name = "kanata"
+
+###########################################
+[[packages]]
+name = "rust"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
+
+###########################################
+[[packages]]
+name = "rofi"
+description = ""
+languages = ["rust"]
+url = [""]
+
+[packages.aur]
+package_name = "rofi"
+bin_name = "rofi"
