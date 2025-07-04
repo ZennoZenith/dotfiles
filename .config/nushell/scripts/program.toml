@@ -1083,8 +1083,8 @@ languages = []
 url = [""]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "bitwarden-cli"
+bin_name = "bw"
 
 ###########################################
 [[packages]]
@@ -1099,13 +1099,29 @@ bin_name = "lazysql"
 
 ###########################################
 [[packages]]
-name = "rofi"
+name = "diffnav"
+description = "A git diff pager based on delta but with a file tree, à la GitHub."
+languages = ["go"]
+url = ["https://github.com/dlvhdr/diffnav"]
+
+[packages.aur]
+package_name = "diffnav-bin"
+bin_name = "diffnav"
+
+###########################################
+[[packages]]
+name = "kanata"
+description = "Improve keyboard comfort and usability with advanced customization"
+languages = ["rust"]
+url = ["https://github.com/jtroo/kanata"]
+
+[packages.aur]
 package_name = "kanata-bin"
 bin_name = "kanata"
 
 ###########################################
 [[packages]]
-name = "rust"
+name = "rofi"
 description = ""
 languages = ["rust"]
 url = [""]

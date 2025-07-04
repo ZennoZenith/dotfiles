@@ -6,6 +6,8 @@
 [core]
         autolf = true
         pager = delta
+[interactive]
+        diffFilter = delta --color-only
 [init]
         defaultBranch = main
 [commit]
@@ -18,6 +20,7 @@
 [alias]
         undo = reset --sort HEAD^
 [delta]
+        navigate = true  # use n and N to move between diff sections
         line-numbers = true
 [user]
         name = Zenno Zenith
@@ -25,3 +28,7 @@
         signingkey = 7D9AF1B2C19131AD
 [tag]
         gpgSign = true
+
+[pager]
+	diff = delta
+	# diff = diffnav

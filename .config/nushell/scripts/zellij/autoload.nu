@@ -1,6 +1,6 @@
 alias zl = zellij
 
-def zll [
+export def zll [
   layout?: string
   session?: string
   --default (-d)
@@ -29,17 +29,17 @@ def zll [
 
 }
 
-def zl [
+export def zl [
   session?: string
 ] {
   zll "coding" $session
 }
 
-def zls [] {
+export def zls [] {
   zellij list-sessions
 }
 
-def zla [
+export def zla [
   session?: string
 ] {
   let session = if ($session != null) { $session } else {
@@ -54,7 +54,7 @@ def zla [
   zellij attach $session
 }
 
-def zld [
+export def zld [
   session?: string
   --force (-f)
 ] {
@@ -74,7 +74,7 @@ def zld [
   }
 }
 
-def zlk [
+export def zlk [
   session?: string
   --force (-f)
 ] {
@@ -94,7 +94,7 @@ def zlk [
   }
 }
 
-def zlda [
+export def zlda [
   --force (-f)
 ] {
   if ($force) {
@@ -104,7 +104,7 @@ def zlda [
   }
 }
 
-def zlka [
+export def zlka [
   --force (-f)
 ] {
   if ($force) {
