@@ -7,5 +7,9 @@ email = "95485961+ZennoZenith@users.noreply.github.com"
 [signing]
 behavior = "own"
 backend = "gpg"
-key = "7D9AF1B2C19131AD"
 # key = "signing@example.com"
+key = "7D9AF1B2C19131AD"
+
+[ui]
+pager = "delta -s"
+diff-formatter = ":git"

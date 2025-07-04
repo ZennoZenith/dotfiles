@@ -9,6 +9,7 @@ $env.config.history = {
 }
 
 $env.EDITOR = 'hx'
+$env.PAGER = 'delta'
 
 $env.GPG_TTY = ^tty
 
