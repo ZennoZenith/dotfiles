@@ -1,40 +1,24 @@
-const keychain_env_dir = $'($nu.home-path)/.local/share/keychain'
-const keychain_env_file = $'($keychain_env_dir)/env'
-
-def parse_keychain [keychain_text: string] {
-  # eg:
-  # set -e SSH_AUTH_SOCK; set -x -U SSH_AUTH_SOCK /tmp/ssh-XXXXXXzzE1oz/agent.96531;
-  # set -e SSH_AGENT_PID; set -x -U SSH_AGENT_PID 96532;
- 
-  ## if default shell is fish 
-  let parsed = $keychain_text | parse "set -e {k}; set -x -U {k} {v};"
-  if ( $parsed | is-not-empty ) {
-    return $parsed
-  }
-
-  ## if default shell is nushell 
-  let parsed = $keychain_text | parse "{k}={v}; export {k2};"
-  if ( $parsed | is-not-empty ) {
-    return $parsed
-  }
-  
-  error make {
-    msg: $"Cannot parse ($keychain_text)"
-    label: {
-      text: ""
-      span: ""
-    }
-  }
-} 
-
 export def --env load_keychian [] {
+  let hostname = (cat /etc/hostname)
+  let keychain_env_file = $'($nu.home-path)/.keychain/($hostname)-sh'
+
   if not ( $keychain_env_file | path exists ) {
     return
   } 
 
-  let envs = open --raw $keychain_env_file
+  # eg:
+  ## ~/.keychain/hostname-fish
+  # set -e SSH_AUTH_SOCK; set -x -U SSH_AUTH_SOCK /tmp/ssh-XXXXXXzzE1oz/agent.96531;
+  # set -e SSH_AGENT_PID; set -x -U SSH_AGENT_PID 96532;
+   
+  ## ~/.keychain/hostname-sh
+  # SSH_AUTH_SOCK=/tmp/ssh-XXXXXX5liZE1/agent.1561; export SSH_AUTH_SOCK;
+  # SSH_AGENT_PID=1562; export SSH_AGENT_PID;
+
+ open --raw $keychain_env_file
     | lines
-    | parse "{k}, {v}" 
+    | parse "{k}={v}; export {k2};"
+    | select k v
     | transpose --header-row
     | into record
     | load-env
@@ -42,32 +26,29 @@ export def --env load_keychian [] {
 
 
 export def --env sshr [ssh_keys?: list<string>] {
-  let ssh_keys = ls -s $'($nu.home-path)/.ssh' | get name | where { |s| ($s | str starts-with 'id_') and  not ($s | str ends-with '.pub') }
-
-  let results = if ($ssh_keys | length) == 1 {
-    $ssh_keys | str join " "
-  } else {
-    $ssh_keys | to text | fzf --no-sort --multi | lines | str join " "
-  }
-
+  ## Updates keychain_env_file with latest env values
+  keychain --quiet
+  load_keychian 
   
-  let envs = keychain --eval --quiet $results
-      | lines
-      | where not ($it | is-empty)
-      | each { parse_keychain $in }
-      | reduce {|it, acc| $acc | append $it }
-      | select k v
+  let ssh_keys = ls -s $'($nu.home-path)/.ssh' | get name | where { |s| ($s | str ends-with '.pub') } | each { $in | str replace ".pub" "" | $"ssh_key: ($in)" }
 
-  ## Done seperatly because envs will be used later as is
-  $envs 
-      | transpose --header-row
-      | into record
-      | load-env
+  let gpg_keys = gpg --with-colons --list-secret-keys --keyid-format LONG | lines | each { split column ":" } | reduce {|it| append $it} | where $it.column1 == "uid" | get column10 | each { $"gpg_uid: ($in)"} 
 
-  if not ($keychain_env_dir | path exists) {
-    ^mkdir -p $keychain_env_dir
-  }
+  let results =  $ssh_keys | append $gpg_keys
+    | to text
+    | fzf --no-sort --multi
+    | lines
+    | each {
+      |v|
+      if ($v | str starts-with "gpg_uid: ") {
+        $v | str replace "gpg_uid: " "" | parse --regex '<([^>]+)>' | get capture0 | first
+      } else if ($v | str starts-with "ssh_key: ") {
+        $v | str replace "ssh_key: " "" 
+      } else {
+        $v
+      }
+    }
 
-  $envs | each { |e| $'($e.k), ($e.v)'} | to text | save -f $keychain_env_file 
+  keychain --quiet ...$results
 }
 
