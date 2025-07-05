@@ -1,5 +1,3 @@
-alias zl = zellij
-
 export def zll [
   layout?: string
   session?: string

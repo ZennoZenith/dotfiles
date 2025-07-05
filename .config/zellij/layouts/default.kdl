@@ -94,6 +94,7 @@ layout {
         children
         pane size=1 borderless=true {
             plugin location="zjstatus" {
+            plugin location="zjstatus" {
                 command_host_command    "uname -n"
                 command_host_format     "{stdout}"
                 command_host_interval   "0"
@@ -109,11 +110,10 @@ layout {
                 datetime_format   "🕑 %H:%M"
                 datetime_timezone "Asia/Kolkata"
 
-                format_left   "#[bg=#313244,fg=#eba0ac]#[bg=#eba0ac,fg=#181926,bold] {session} {mode}#[bg=#282828] {tabs}"
+                format_left   "#[bg=black,fg=#eba0ac]#[bg=#eba0ac,fg=#181926,bold] {session} {mode}#[bg=black] {tabs}"
                 format_center "{notifications}"
-                // format_right  "#[fg=#89dceb]#[fg=#11111b,bg=#89dceb] #[fg=#89dceb,bg=#313244] {command_user}@{command_host}#[fg=#313244]#[fg=#74c7ec]#[fg=#11111b,bg=#74c7ec]󰃭 #[fg=#74c7ec,bg=#313244] {datetime}#[fg=#313244] "
-                format_right "#[fg=#89dceb]#[fg=#11111b,bg=#89dceb] #[fg=#89dceb,bg=#313244] {command_user}@{command_host}#[fg=#313244]#[fg=#74c7ec]#[fg=#11111b,bg=#74c7ec]📅 #[fg=#74c7ec,bg=#313244] {datetime}#[fg=#313244] "
-                format_space  "#[bg=#282828]"
+                format_right "#[fg=#89dceb]#[fg=#11111b,bg=#89dceb] #[fg=#89dceb,bg=black] {command_user}@{command_host}#[fg=#313244]#[fg=#74c7ec]#[fg=#11111b,bg=#74c7ec]📅 #[fg=#74c7ec,bg=black] {datetime}#[fg=#313244] "
+                format_space  "#[bg=black]"
                 format_hide_on_overlength "true"
                 format_precedence "lrc"
 
@@ -122,7 +122,7 @@ layout {
                 border_format   "#[fg=#313244]{char}"
                 border_position "top"
 
-                // hide_frame_for_single_pane "true"
+                hide_frame_for_single_pane "false"
 
                 mode_normal        "#[bg=#a6da95,fg=#181926,bold] NORMAL#[bg=#181926,fg=#a6da95]"
                 mode_tmux          "#[bg=#cba6f7,fg=#181926,bold] TMUX#[bg=#181926,fg=#cba6f7]"
@@ -139,13 +139,13 @@ layout {
                 mode_session       "#[bg=#f5c2e7,fg=#181926,bold] SESSION#[bg=#181926,fg=#f5c2e7]"
                 mode_prompt        "#[bg=#f5c2e7,fg=#181926,bold] PROMPT#[bg=#181926,fg=#f5c2e7]"
 
-                tab_normal              "#[bg=#313244,fg=#89b4fa]#[bg=#89b4fa,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#89b4fa,bold] {name}{floating_indicator}#[bg=#313244,fg=#363a4f,bold]"
-                tab_normal_fullscreen   "#[bg=#313244,fg=#89b4fa]#[bg=#89b4fa,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#89b4fa,bold] {name}{fullscreen_indicator}#[bg=#313244,fg=#363a4f,bold]"
-                tab_normal_sync         "#[bg=#313244,fg=#89b4fa]#[bg=#89b4fa,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#89b4fa,bold] {name}{sync_indicator}#[bg=#313244,fg=#363a4f,bold]"
-                tab_active              "#[bg=#313244,fg=#fab387]#[bg=#fab387,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#fab387,bold] {name}{floating_indicator}#[bg=#313244,fg=#363a4f,bold]"
-                tab_active_fullscreen   "#[bg=#313244,fg=#fab387]#[bg=#fab387,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#fab387,bold] {name}{fullscreen_indicator}#[bg=#313244,fg=#363a4f,bold]"
-                tab_active_sync         "#[bg=#313244,fg=#fab387]#[bg=#fab387,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#fab387,bold] {name}{sync_indicator}#[bg=#313244,fg=#363a4f,bold]"
-                tab_separator           "#[bg=#313244] "
+                tab_normal              "#[bg=black,fg=#89b4fa]#[bg=#89b4fa,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#89b4fa,bold] {name}{floating_indicator}#[bg=black,fg=#363a4f,bold]"
+                tab_normal_fullscreen   "#[bg=black,fg=#89b4fa]#[bg=#89b4fa,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#89b4fa,bold] {name}{fullscreen_indicator}#[bg=black,fg=#363a4f,bold]"
+                tab_normal_sync         "#[bg=black,fg=#89b4fa]#[bg=#89b4fa,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#89b4fa,bold] {name}{sync_indicator}#[bg=black,fg=#363a4f,bold]"
+                tab_active              "#[bg=black,fg=#fab387]#[bg=#fab387,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#fab387,bold] {name}{floating_indicator}#[bg=black,fg=#363a4f,bold]"
+                tab_active_fullscreen   "#[bg=black,fg=#fab387]#[bg=#fab387,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#fab387,bold] {name}{fullscreen_indicator}#[bg=black,fg=#363a4f,bold]"
+                tab_active_sync         "#[bg=black,fg=#fab387]#[bg=#fab387,fg=#1e2030,bold]{index} #[bg=#363a4f,fg=#fab387,bold] {name}{sync_indicator}#[bg=black,fg=#363a4f,bold]"
+                tab_separator           "#[bg=black] "
 
                 // tab_sync_indicator       "  "
                 // tab_fullscreen_indicator " 󰊓 "
@@ -154,7 +154,7 @@ layout {
                 tab_fullscreen_indicator " ⛶ "
                 tab_floating_indicator   " ⧉ "
 
-                notification_format_unread "#[fg=#f9e2af]#[fg=#11111b,bg=#f9e2af] #[fg=#cdd6f4,bg=#313244] {message}#[fg=#313244]"
+                notification_format_unread "#[fg=#f9e2af]#[fg=#11111b,bg=#f9e2af] #[fg=#cdd6f4,bg=black] {message}#[fg=#313244]"
                 notification_format_no_notifications ""
                 notification_show_interval "10"
             }

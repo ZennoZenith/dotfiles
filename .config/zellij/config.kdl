@@ -3,6 +3,18 @@ keybinds clear-defaults=true {
     locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
         unbind "Alt c" "Ctrl t" "Ctrl h"// unbind one or more keys in a specific mode
+        bind "Ctrl y" {
+            LaunchOrFocusPlugin "harpoon" {
+                floating true; move_to_focused_tab true;
+                // USAGE
+                // a to add pane to list
+                // A to add all current panes to list
+                // Up and Down or j and k to cycle through pane list
+                // d to remove pane from list
+                // Enter or l to switch to the selected pane
+                // Esc or Ctrl + c to exit
+            }
+        }
     }
     pane {
         bind "left" { MoveFocus "left"; }
@@ -159,18 +171,6 @@ keybinds clear-defaults=true {
         bind "Alt l" { MoveFocusOrTab "right"; }
         bind "Alt n" { NewPane; }
         bind "Alt o" { MoveTab "right"; }
-        bind "Alt y" {
-            LaunchOrFocusPlugin "harpoon" {
-                floating true; move_to_focused_tab true;
-                // USAGE
-                // a to add pane to list
-                // A to add all current panes to list
-                // Up and Down or j and k to cycle through pane list
-                // d to remove pane from list
-                // Enter or l to switch to the selected pane
-                // Esc or Ctrl + c to exit
-            }
-        }
     }
     shared_except "locked" {
         bind "Ctrl g" { SwitchToMode "Locked"; }
