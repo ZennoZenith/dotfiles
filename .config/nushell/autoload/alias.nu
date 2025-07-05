@@ -12,4 +12,5 @@ alias bnl = bat --number --line-range
 alias bp = bat --plain
 alias bpl = bat --plain --line-range
 alias bl = bat --line-range
+alias bathelp = bat --plain --language=help
 

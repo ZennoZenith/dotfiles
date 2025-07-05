@@ -172,6 +172,16 @@ bin_name = "bacon"
 
 ###########################################
 [[packages]]
+name = "starship"
+description = ""
+languages = ["rust"]
+
+[packages.aur]
+package_name = "starship"
+bin_name = "starship"
+
+###########################################
+[[packages]]
 name = "nushell"
 description = ""
 
@@ -1121,25 +1131,25 @@ bin_name = "kanata"
 
 ###########################################
 [[packages]]
-name = "rofi"
-description = ""
+name = "tailspin"
+description = "A log file highlighter"
 languages = ["rust"]
-url = [""]
+url = ["https://github.com/bensadeh/tailspin"]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "tailspin"
+bin_name = "tspin"
 
 ###########################################
 [[packages]]
-name = "rofi"
-description = ""
+name = "hl"
+description = "A fast and powerful log viewer and processor."
 languages = ["rust"]
-url = [""]
+url = ["https://github.com/pamburus/hl"]
 
 [packages.aur]
-package_name = "rofi"
-bin_name = "rofi"
+package_name = "hl"
+bin_name = "hl"
 
 ###########################################
 [[packages]]

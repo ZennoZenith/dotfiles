@@ -168,6 +168,7 @@ let autostart_commands = [
   $'systemctl start syncthing@($env.USER).service'
   systemctl enable syncthing.service --user
   systemctl enable pueued --user
+  systemctl --user enable atuin.service --now
 
 ]
 
