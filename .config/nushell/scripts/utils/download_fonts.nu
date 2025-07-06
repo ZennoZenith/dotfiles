@@ -1,14 +1,16 @@
 let fonts_url = [
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/0xProto.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Agave.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaCode.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Mononoki.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/RobotoMono.zip
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/NerdFontsSymbolsOnly.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/0xProto.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaCode.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Mononoki.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/RobotoMono.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/NerdFontsSymbolsOnly.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/NerdFontsSymbolsOnly.zip
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/GeistMono.tar.xz
 ]
 
 mkdir ~/.fonts

@@ -1,18 +1,29 @@
-$env.config.edit_mode = 'vi'
-$env.config.buffer_editor = "hx"
+$env.EDITOR = 'hx'
+$env.PAGER = 'delta'
+$env.BAT_THEME = 'Monokai Extended'
+$env.MANPAGER = "sh -c 'sed -u -e \"s/\\x1B\\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+$env.GPG_TTY = ^tty
+
+
 $env.config.show_banner = false # true or false to enable or disable the welcome banner at startup
+$env.config.buffer_editor = "hx"
+$env.config.edit_mode = 'vi'
+# "block", "underscore", "line", "blink_block", "blink_underscore", "blink_line", or "inherit"
+$env.config.cursor_shape.vi_insert = "line"
+$env.config.cursor_shape.vi_normal = "block"
+
+## TODO: load LS_COLORS from file
+$env.LS_COLORS = (vivid generate lava)
+$env.config.render_right_prompt_on_last_line = true
+
 $env.config.history = {
   file_format: sqlite
-  max_size: 1_000_000
+  max_size: 5_000_000
   sync_on_enter: true
   isolation: true
 }
-
-$env.EDITOR = 'hx'
-$env.PAGER = 'delta'
-$env.MANPAGER = "sh -c 'sed -u -e \"s/\\x1B\\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
-
-$env.GPG_TTY = ^tty
+$env.config.rm.always_trash = true
+$env.config.filesize.unit = 'binary'
 
 # =============================== ENV =========================================
 $env.LOCAL_BIN = $'($nu.home-path)/.local/bin'
@@ -41,26 +52,12 @@ use std/util "path add"
 path add ...$list_of_paths
 # $env.path ++= ["~/.local/bin"]
 
-## autoload ordered
-source ~/dotfiles/.config/nushell/scripts/completer/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/alacritty/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/atuin/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/starship/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/fzf/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/swww/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/yazi/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/zoxide/autoload.nu
-source ~/dotfiles/.config/nushell/scripts/zellij/autoload.nu
-
 ## theme is handeled by ghostty terminal
 # source ($nu.config-path | path dirname | path join 'nu-themes/catppuccin-mocha.nu')
-
 
 use ~/dotfiles/.config/nushell/scripts/keychain/keychain.nu *
 load_keychian
 
-## ====
- 
 def show_banner [] {
     let ellie = [
         "     __  ,"

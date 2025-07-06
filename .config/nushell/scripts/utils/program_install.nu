@@ -197,3 +197,14 @@ let nerd_fonts_aur = [
   # ttf-nerd-fonts-symbols
   # ttf-nerd-fonts-symbols-mono
 ]
+
+
+# paru -S ripgrep-all
+# (Optional)
+#     ffmpeg: for the ffmpeg adapter
+#     graphicsmagick: for the pdfpages adapter
+#     pandoc: for the pandoc adapter
+#     poppler: for the poppler adapter
+#     tesseract: for the tesseract adapter
+
+
