@@ -1,3 +1,8 @@
+[user]
+        name = Zenno Zenith
+        email =  95485961+ZennoZenith@users.noreply.github.com 
+        signingkey = 7D9AF1B2C19131AD
+
 [filter "lfs"]
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
@@ -22,10 +27,7 @@
 [delta]
         navigate = true  # use n and N to move between diff sections
         line-numbers = true
-[user]
-        name = Zenno Zenith
-        email =  95485961+ZennoZenith@users.noreply.github.com 
-        signingkey = 7D9AF1B2C19131AD
+        true-color = always
 [tag]
         gpgSign = true
 
