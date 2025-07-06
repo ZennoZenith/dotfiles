@@ -55,7 +55,15 @@ ignored_commands = [
   "cd",
   "ls",
   "vi",
-  "hx"
+  "hx",
+  "omm",
+  "yazi",
+  "y",
+  "z",
+  "uv",
+  "paru",
+  "pacman",
+  "let"
 ]
 
 [sync]

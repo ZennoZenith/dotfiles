@@ -4,6 +4,12 @@ deno = { command = "deno", args = [ "lsp" ], config.deno.enable = true }
 emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
 superhtml-lsp = { command = "superhtml", args = [ "lsp" ]}
 
+## Only available for version > 25.01.1
+[language-server.colors]
+command = "uwu_colors"
+args = [ "--variable-completions" ]
+except-features = [ "format" ]
+
 [language-server.eslint]
 command = "vscode-eslint-language-server"
 args = ["--stdio"]
@@ -118,6 +124,8 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "html"] }
 [[language]]
 name = "css"
 auto-format = true
+## colors available for version > 25.01.1
+# language-servers = ["colors", "vscode-css-language-server", "tailwindcss-ls", "emmet-ls"]
 language-servers = ["vscode-css-language-server", "tailwindcss-ls", "emmet-ls"]
 formatter = { command = "dprint", args = ["fmt", "--stdin", "css"] }
 # formatter = { command = 'prettier', args = ["--parser", "css"] }
@@ -127,7 +135,7 @@ name = "svelte"
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "svelte"] }
 language-servers = ["svelteserver", "tailwindcss-ls"]
-comment-tokens = "//"
+# comment-tokens = "//"
 
 
 [[language]]

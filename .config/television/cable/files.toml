@@ -1,0 +1,14 @@
+[metadata]
+name = "files"
+description = "A channel to select files and directories"
+requirements = ["fd", "bat"]
+
+[source]
+command = ["fd -t f -H --exclude .git --exclude .jj", "fd -t f --exclude .git --exclude .jj"]
+
+[preview]
+command = "bat -n --color=always '{}'"
+env = { BAT_THEME = "ansi" }
+
+[keybindings]
+shortcut = "f1"

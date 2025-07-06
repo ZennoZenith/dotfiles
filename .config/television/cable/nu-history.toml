@@ -1,0 +1,10 @@
+
+[metadata]
+name = "nu-history"
+description = "A channel to select from your nu history"
+
+[source]
+## $nu.histroy-path => loads histroy.txt maybe because no config is loaded
+# command = "nu -c 'open $nu.history-path | get history | get command_line | reverse | to text'"
+command = "nu -c 'open ~/.config/nushell/history.sqlite3 | get history | get command_line | reverse | to text'"
+

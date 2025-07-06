@@ -14,10 +14,14 @@ theme = Mathias
 # font-family = CaskaydiaMono Nerd Font
 # font-family = FiraCode Nerd Font Mono
 font-family = CaskaydiaCove Nerd Font
+# font-family = CaskaydiaCove Nerd Font Mono
+# font-family = GeistMono Nerd Font Mono
+font-family = GeistMono Nerd Font Propo
 font-size = 12
 
 # background-opacity = 0.95
 # background-opacity = 0.6
+background-opacity = 0.0
 
 gtk-titlebar = false
 
