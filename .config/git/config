@@ -1,0 +1,155 @@
+## INCLUDES defined at the end
+# https://blog.gitbutler.com/how-git-core-devs-configure-git/
+ 
+# URL shortcuts
+[url "git@github.com:"]
+    insteadOf = "gh:"
+
+[url "git@github-zennozenith:"]
+    insteadOf = "ghz:"
+
+[url "git@github-meeran:"]
+    insteadOf = "ghm:"
+
+[url "ssh://git@git.zennozenith.com:2202/zennozenith/"]
+    insteadOf = "zz:"
+
+[user]
+    name = Zenno Zenith
+    email =  95485961+ZennoZenith@users.noreply.github.com 
+    signingkey = 7D9AF1B2C19131AD
+
+[include]
+    path = ~/user.gitconfig
+
+[core]
+    pager = delta
+    autolf = true
+    autocrlf = input  # keep newlines as in input
+    compression = 9  # trade cpu for network
+    fsync = none
+    whitespace = error  # threat incorrect whitespace as errors
+    excludesfile = ~/.gitignore
+
+# [gpg]
+#     program = /path/to/gpg
+ 
+[init]
+    defaultBranch = main
+
+[interactive]
+    diffFilter = delta --color-only
+    singlekey = true
+
+[pager]
+    branch = false  # no need to use pager for git branch
+    diff = delta
+    # diff = diffnav
+
+[diff]
+    context = 3  # less context in diffs
+    renames = copies  # detect copies as renames in diffs
+    interHunkContext = 10  # merge near hunks in diffs
+
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+
+[log]
+    abbrevCommit = true  # short commits
+    graphColors = blue,yellow,cyan,magenta,green,red
+
+[commit]
+    gpgSign = true
+    verbose = true
+    template = ~/.config/git/template
+
+[tag]
+    gpgSign = true
+    sort = version:refname
+
+[push]
+    autoSetupRemote = true  # easier to push new branches
+    default = simple
+    followTags = true  # push also tags
+    # gpgSign = false  # remotes doesn't support sign pushes
+
+[pull]
+    rebase = true
+
+[blame]
+    coloring = highlightRecent
+    date = relative
+
+[status]
+    branch = true
+    short = true
+    showStash = true
+    showUntrackedFiles = all  # show individual untracked files
+
+[submodule]
+    fetchJobs = 16
+
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+
+[rerere]
+    enabled = true
+    autoupdate = true
+
+[help]
+    autocorrect = prompt
+
+# Colors
+[color "blame"]
+    highlightRecent = black bold,1 year ago,white,1 month ago,default,7 days ago,blue
+
+[color "branch"]
+    current  = magenta
+    local    = default
+    remote   = yellow
+    upstream = green
+    plain    = blue
+
+[color "diff"]
+    meta       = black bold
+    frag       = magenta
+    context    = white
+    whitespace = yellow reverse
+
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+ 
+## disable advices
+[advice]  
+    addEmptyPathspec = false
+    pushNonFastForward = false
+    statusHints = false
+
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+
+[alias]
+    undo = reset --sort HEAD^
+
+[include]
+    path = ~/.config/delta/delta.gitconfig
+
+[includeIf "gitdir:~/github/zenith/"]
+    path = ~/zenith.gitconfig
+
+[includeIf "gitdir:~/github/knack/"]
+    path = ~/knack.gitconfig

@@ -1,0 +1,7 @@
+# [user]
+#     name = Zenno Zenith
+#     email =  95485961+ZennoZenith@users.noreply.github.com 
+#     signingkey = 7D9AF1B2C19131AD
+
+# [core]
+#     sshCommand = "ssh -i ~/.ssh/github_key"

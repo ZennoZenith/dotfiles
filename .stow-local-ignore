@@ -12,7 +12,6 @@ _darcs
 \.hg
 
 \.git
-\.jj
 \.gitignore
 \.gitmodules
 
@@ -22,3 +21,7 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+
+
+\.jj
+user.gitconfig.example

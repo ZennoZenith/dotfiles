@@ -758,7 +758,7 @@ description = "Commitizen-like tool for formatting commit messages using emojis.
 languages = ["go"]
 url = ["https://github.com/muandane/goji"]
 
-[packages]
+[packages.script]
 install_script = """
 VERSION=$(curl --silent "https://api.github.com/repos/muandane/goji/releases/latest" | jq .tag_name -r)
 curl -Lso goji.tar.gz https://github.com/muandane/goji/releases/download/$VERSION/goji_${VERSION}_Linux_x86_64.tar.gz
@@ -1072,6 +1072,7 @@ languages = ["rust"]
 url = ["https://github.com/thomasschafer/scooter"]
 
 [packages.cargo]
+prefered = true
 package_name = "scooter"
 bin_name = "scooter"
 
