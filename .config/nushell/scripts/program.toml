@@ -1461,6 +1461,28 @@ bin_name = "fx"
  
 ###########################################
 [[packages]]
+name = "timr-tui"
+description = "TUI to organize your time: Pomodoro, Countdown, Timer."
+languages = ["rust"]
+url = ["https://github.com/sectore/timr-tui"]
+
+[packages.aur]
+package_name = "timr-bin"
+bin_name = "timr"
+ 
+###########################################
+[[packages]]
+name = "clock-tui"
+description = " A clock app in terminal written in Rust, supports local clock, timer and stopwatch."
+languages = [""]
+url = ["https://github.com/race604/clock-tui"]
+
+[packages.cargo]
+package_name = "clock-tui"
+bin_name = "tclock"
+ 
+###########################################
+[[packages]]
 name = ""
 description = ""
 languages = [""]
