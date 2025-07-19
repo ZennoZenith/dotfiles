@@ -124,9 +124,9 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "html"] }
 [[language]]
 name = "css"
 auto-format = true
-## colors available for version > 25.01.1
-# language-servers = ["colors", "vscode-css-language-server", "tailwindcss-ls", "emmet-ls"]
-language-servers = ["vscode-css-language-server", "tailwindcss-ls", "emmet-ls"]
+## colors available for version >= 25.07
+language-servers = ["colors", "vscode-css-language-server", "tailwindcss-ls", "emmet-ls"]
+# language-servers = ["vscode-css-language-server", "tailwindcss-ls", "emmet-ls"]
 formatter = { command = "dprint", args = ["fmt", "--stdin", "css"] }
 # formatter = { command = 'prettier', args = ["--parser", "css"] }
 
@@ -135,7 +135,7 @@ name = "svelte"
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "svelte"] }
 language-servers = ["svelteserver", "tailwindcss-ls"]
-# comment-tokens = "//"
+# comment-tokens = ["//"]
 
 
 [[language]]
@@ -149,6 +149,8 @@ name = "markdown"
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 language-servers = ["marksman", "markdown-oxide"]
+## https://github.com/helix-editor/helix/wiki/Recipes#continue-markdown-lists--quotes
+comment-tokens = ["-", "+", "*", "- [ ]", ">"]
 
 [[language]]
 name = "typescript"
