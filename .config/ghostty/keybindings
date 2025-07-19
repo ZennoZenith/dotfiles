@@ -1,1 +1,5 @@
 keybind = alt+shift+enter=toggle_fullscreen
+
+## See https://github.com/helix-editor/helix/wiki/Terminal-Support#ghostty
+keybind = alt+left=unbind
+keybind = alt+right=unbind
