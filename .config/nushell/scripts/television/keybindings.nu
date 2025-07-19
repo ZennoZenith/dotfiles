@@ -9,12 +9,13 @@ def tv_files [] {
     let rhs = ($line | str substring $cursor..)
     cd ~
     let output = (tv files | str trim)
+    const PREFIX = "~/"
 
     if ($output | str length) > 0 {
         let needs_space = not ($lhs | str ends-with " ")
         let lhs_with_space = if $needs_space { $"($lhs) " } else { $lhs }
-        let new_line = $lhs_with_space + $output + $rhs
-        let new_cursor = ($lhs_with_space + $output | str length)
+        let new_line =  $lhs_with_space + $PREFIX + $output + $rhs
+        let new_cursor = ($lhs_with_space + $PREFIX + $output | str length)
         commandline edit --replace $new_line
         commandline set-cursor $new_cursor
     }
@@ -36,6 +37,12 @@ def tv_files_in_cwd [] {
         commandline edit --replace $new_line
         commandline set-cursor $new_cursor
     }
+}
+
+def --env tv_change_dir [] {
+    let current_prompt = (commandline)
+    let output = (tv dirs --input $current_prompt | str trim)
+    cd $output
 }
 
 def tv_shell_history [] {
@@ -61,11 +68,7 @@ export-env {
             event: {
                 send: executehostcommand,
                 ## using a function and using cd inside it does not actually change dir
-                cmd: "
-                    let current_prompt = (commandline)
-                    let output = (tv dirs --input $current_prompt | str trim)
-                    cd $output
-                "
+                cmd: "tv_change_dir"
             }
         }]
     }
