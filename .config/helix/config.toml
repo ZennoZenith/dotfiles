@@ -146,6 +146,8 @@ C-l = "jump_view_right"
 #   ":redraw",
 # ]
 
+f = "file_picker_in_current_directory"
+F = "file_picker"
 w = ":write-all"
 c = ":buffer-close"
 l = [
