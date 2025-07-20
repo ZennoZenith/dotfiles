@@ -34,6 +34,8 @@ $env.NVM_DIR = $'($nu.home-path)/.nvm'
 $env.BUN_PATH = $'($env.BUN_INSTALL)/bin'
 $env.GO_PATH = '/usr/local/go/bin'
 $env.GO_BINS = $'($nu.home-path)/go/bin'
+$env.CUDA_PATH = "/opt/cuda"
+$env.CUDA_BIN = $'($env.CUDA_PATH)/bin'
 
 
 # =============================== PATH ========================================
@@ -46,6 +48,7 @@ let list_of_paths = [
   $env.BUN_PATH
   $env.GO_PATH
   $env.GO_BINS
+  $env.CUDA_BIN
    # etc.
 ]
 use std/util "path add"

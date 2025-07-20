@@ -1,0 +1,20 @@
+[Unit]
+Description=Seanime is a self-hosted media server allowing you to manage your anime library, stream anime and read manga. It is available as a server with a web interface or a desktop app.
+StartLimitIntervalSec=60
+StartLimitBurst=10
+
+[Service]
+Type=simple
+WorkingDirectory=/home/zenith/Services/HomeLab/seanime
+ExecStart=/home/zenith/Services/HomeLab/seanime/seanime --datadir /home/zenith/Services/HomeLab/seanime/data
+Restart=on-failure
+RestartSec=5s
+
+# Hardening
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
+
