@@ -126,7 +126,7 @@ def volume [action: string = "inc"] {
 
 
 def brightness [action: string = "inc"] {
-  if not ($VOL_FILE | path exists) {
+  if not ($BRIT_FILE | path exists) {
     init brightness
   }
 
