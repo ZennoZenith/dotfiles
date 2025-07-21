@@ -20,7 +20,7 @@ mouse = false
 rulers = [80]
 scroll-lines = 1
 true-color = true
-text-width = 100
+text-width = 120
 end-of-line-diagnostics = "hint"
 shell = ["nu", "--stdin", "-c"]
 

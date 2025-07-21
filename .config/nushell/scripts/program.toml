@@ -1484,6 +1484,18 @@ bin_name = "tclock"
  
 ###########################################
 [[packages]]
+name = "markdown-oxide"
+description = "PKM Markdown Language Server"
+languages = ["rust"]
+url = ["https://github.com/Feel-ix-343/markdown-oxide", "https://oxide.md/"]
+
+[packages.cargo]
+package_name = "markdown-oxide"
+bin_name = ""
+url = "cargo binstall --git 'https://github.com/feel-ix-343/markdown-oxide' markdown-oxide"
+ 
+###########################################
+[[packages]]
 name = ""
 description = ""
 languages = [""]
