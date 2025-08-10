@@ -1,4 +1,4 @@
-db_path      = "~/.local/share/omm/omm.db"
+db_path      = "~/shared/omm/omm.db"
 tl_color     = "#b8bb26"
 atl_color    = "#fabd2f"
 title        = "home"
