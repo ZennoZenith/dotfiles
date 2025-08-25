@@ -737,7 +737,7 @@ url = ["https://github.com/Wilfred/difftastic", "https://terminaltrove.com/difft
 
 [packages.aur]
 package_name = "difftastic"
-bin_name = "difftastic"
+bin_name = "difft"
 
 ###########################################
 [[packages]]
@@ -1527,6 +1527,17 @@ url = ["https://github.com/Orange-OpenSource/hurl"]
 [packages.aur]
 package_name = "hurl"
 bin_name = "hurl"
+
+###########################################
+[[packages]]
+name = "mergiraf"
+description = "A syntax-aware git merge driver for a growing collection of programming languages and file formats."
+languages = ["rust"]
+url = ["https://mergiraf.org"]
+
+[packages.aur]
+package_name = "mergiraf-bin"
+bin_name = "mergiraf"
 
 ###########################################
 [[packages]]
