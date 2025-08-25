@@ -58,6 +58,9 @@ path add ...$list_of_paths
 ## theme is handeled by ghostty terminal
 # source ($nu.config-path | path dirname | path join 'nu-themes/catppuccin-mocha.nu')
 
+# =============================== ALIAS =======================================
+alias pp = do {pacman -Qqe | fzf --multi --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'}
+
 use ~/dotfiles/.config/nushell/scripts/keychain/keychain.nu *
 load_keychian
 
