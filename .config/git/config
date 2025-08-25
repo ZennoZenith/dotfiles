@@ -46,6 +46,14 @@
     diff = delta
     # diff = diffnav
 
+[merge]
+    conflictStyle = "diff3"
+
+[merge "mergiraf"]
+    name = mergiraf
+    driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+
+
 [diff]
     context = 3  # less context in diffs
     renames = copies  # detect copies as renames in diffs

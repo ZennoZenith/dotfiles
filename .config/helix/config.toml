@@ -23,6 +23,7 @@ true-color = true
 text-width = 120
 end-of-line-diagnostics = "hint"
 shell = ["nu", "--stdin", "-c"]
+# popup-border = "all"
 
 [editor.statusline]
 left = [
