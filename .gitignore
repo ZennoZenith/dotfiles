@@ -1,3 +1,4 @@
 .config/age
 secrets/
 assets/
+.jj/
